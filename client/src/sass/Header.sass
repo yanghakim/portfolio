@@ -1,0 +1,48 @@
+@import "./variables.sass"
+
+.header
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-top: 100px
+
+  &__left
+    display: flex
+    flex-direction: row
+
+    font-family: 'Space Mono', monospace
+    color: $accent
+    font-size: 0.9em
+    letter-spacing: -0.5px
+    text-decoration: none !important
+
+    transition: 0.3s ease
+
+    &:hover
+      color: $green
+
+    &-greeting
+      margin: 0px 0 0 20px
+
+  &__nav
+    &-btn
+      margin: 0 30px
+
+      font-size: 1em
+      color: $shadow
+
+      background: none
+      font-family: 'Space Mono', monospace
+      outline: none
+      border: none
+      text-decoration: none
+
+      cursor: pointer
+      transition: 0.3s ease-in
+
+      &:hover
+        color: $accent
+
+      &:focus
+        color: $accent
+      

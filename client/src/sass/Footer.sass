@@ -1,0 +1,37 @@
+@import "./variables.sass"
+
+.footer
+  width: 100%
+  margin: auto
+
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+  background: none
+  border-top: 2px solid $accent
+  margin-bottom: 30px
+
+  color: $shadow
+  font-family: 'Space Mono', monospace
+  font-size: 0.9em
+  text-align: center
+
+  &__left
+    display: flex
+    flex-direction: row
+    align-items: center
+
+    a
+      text-decoration: none !important
+      color: $accent
+      margin-right: 40px
+
+      transition: 0.5s ease
+
+      &:hover
+        color: $red
+
+
+  &__contact
+    text-align: right

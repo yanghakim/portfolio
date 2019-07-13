@@ -1,0 +1,90 @@
+@import "./variables.sass"
+
+@mixin block($color)
+  width: 70%
+  padding: 5px 30px
+  margin: 0 auto
+
+  background: none
+  border: 2px solid $color
+  box-shadow: -7px -7px #fff, -9px -9px $color
+
+  color: $color
+  font-family: 'Space Mono', monospace
+  letter-spacing: 3px
+  font-size: 1.1em
+  text-decoration: none
+
+  transition: 0.2s ease
+  cursor: pointer
+
+  &-title
+    color: lighten($color, 10%)
+    margin-bottom: -20px
+    font-size: 0.8em
+    letter-spacing: 1px
+
+  &-name
+    color: $color
+    font-size: 1.5em
+    padding-bottom: 10px
+
+    border-bottom: 2px solid $color
+
+  &-description
+    font-size: 0.8em
+    letter-spacing: 0.5px
+
+    margin-top: -10px
+
+  &-tech
+    font-size: 0.8em
+    letter-spacing: 0.1px
+    color: lighten($color, 10%)
+
+.home
+  display: grid
+  grid-row-gap: 100px
+  width: 70%
+
+  &__blocks
+    display: grid
+    grid-row-gap: 100px
+    grid-template-columns: 1fr 1fr
+
+  &__blockone
+    @include block($accent)
+
+    &:hover
+      background-color: $shadow
+      border: 2px solid $shadow
+      box-shadow: -7px 7px #fff, -9px 9px $shadow
+
+  &__blocktwo
+    @include block($red)
+    box-shadow: 7px -7px #fff, 9px -9px $red
+
+    cursor: pointer
+
+    &:hover
+      background-color: $secondary
+      border: 2px solid $secondary
+      box-shadow: 7px 7px #fff, 9px 9px $secondary
+
+  &__blockthree
+    @include block($accent)
+    box-shadow: -7px 7px #fff, -9px 9px $accent
+
+    &:hover
+      background-color: $shadow
+      border: 2px solid $shadow
+      box-shadow: -7px -7px #fff, -9px -9px $shadow
+
+  &__blockfour
+    @include block($accent)
+    box-shadow: 7px 7px #fff, 9px 9px $accent
+
+    &:hover
+      background-color: $shadow
+      border: 2px solid $shadow
+      box-shadow: 7px -7px #fff, 9px -9px $shadow

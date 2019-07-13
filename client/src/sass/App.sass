@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Karla|Space+Mono&display=swap')
+@import "./variables.sass"
+
+html
+  overflow-y: scroll
+
+  &::-webkit-scrollbar
+    width: 1em
+    background-color: none
+    border-left: 2px dashed $accent
+
+  &::-webkit-scrollbar-thumb
+    background-color: $accent
+
+.container
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
