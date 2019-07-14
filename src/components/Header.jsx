@@ -19,15 +19,6 @@ class Header extends Component {
             experiences.
           </p>
         </NavLink>
-        <div className="header__nav">
-          <Link to={"/"} className="header__nav-btn">
-            home
-          </Link>
-
-          <Link to={"/contact"} className="header__nav-btn">
-            contact
-          </Link>
-        </div>
       </div>
     );
   }
