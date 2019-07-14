@@ -5,6 +5,9 @@
   font-family: 'Space Mono', monospace
   width: 70%
 
+  @media (max-width: 900px)
+    font-size: 0.8em
+
   span
     color: $purple
 
@@ -40,7 +43,6 @@
     grid-row: 2 / span 2
     grid-column: 2
     justify-self: end
-    margin-right: 30px
     align-self: flex-end
 
     display: grid
@@ -48,6 +50,10 @@
 
     height: 90px
     width: 90px
+
+    @media (max-width: 900px)
+      height: 60px
+      width: 60px
 
     &-learned
       grid-column: 1 / span 2
@@ -86,6 +92,10 @@
       font-size: 0.7em
       color: $accent
 
+      @media (max-width: 900px)
+        grid-column: 1 / span 2
+        border-right: 2px solid $accent
+
     &-software
       background: none
       border: none
@@ -99,6 +109,9 @@
       font-size: 0.7em
       color: $accent
 
+      @media (max-width: 900px)
+        grid-column: 1 / span 2
+
   &__learned
     margin: 30px 0
     border-top: 2px dashed $green
@@ -108,6 +121,9 @@
 
     transition: 0.25s ease-in-out
 
+    @media (max-width: 900px)
+      padding: 10px 0
+
     &:hover
       border-top: 2px dashed $purple
 
@@ -115,6 +131,10 @@
       display: grid
       grid-template-columns: repeat(3, 1fr)
       grid-row-gap: 30px
+
+      @media (max-width: 900px)
+        grid-template-columns: repeat(2, 1fr)
+        grid-row-gap: 5px
 
     &-1
       &-header
@@ -167,6 +187,9 @@
 
     transition: 0.25s ease-in-out
 
+    @media (max-width: 900px)
+      padding: 10px 0
+
     &:hover
       border-top: 2px dashed $purple
 
@@ -190,6 +213,9 @@
     &:hover
       border-top: 2px dashed $purple
 
+    @media (max-width: 900px)
+      flex-direction: column
+
   &__guide
     margin: 30px 0px
     border: 2px solid $accent
@@ -200,11 +226,19 @@
     box-shadow: -7px -7px #fff, -9px -9px $purple
     transition: 0.25s ease-in-out
 
+    @media (max-width: 900px)
+      width: 100%
+      display: grid
+      grid-template-columns: 1fr 1fr
+
     &:hover
       box-shadow: -7px 7px #fff, -9px 9px $purple
 
     &-header
       letter-spacing: 2px
+
+      @media (max-width: 900px)
+        grid-column: 1 / span 2
 
     &-0
       &-body
@@ -225,6 +259,10 @@
         color: $shadow
         margin-left: 10px
 
+      @media (max-width: 900px)
+        grid-row: 2 / span 2
+        grid-column: 2
+
     &-3
       &-header
         color: $purple
@@ -232,6 +270,10 @@
       &-body
         color: $shadow
         margin-left: 10px
+
+      @media (max-width: 900px)
+        grid-row: 4
+        grid-column: 2
 
     &-4
       margin-top: 2px dashed $purple
@@ -242,13 +284,16 @@
   &__tech
     margin: 30px 0px
     border: 2px solid $accent
-    padding: 10px 20px
+    padding: 10px 30px
 
     width: 45%
     height: auto
 
     box-shadow: 7px 7px #fff, 9px 9px $green
     transition: 0.25s ease-in-out
+
+    @media (max-width: 900px)
+      width: 100%
 
     &:hover
       box-shadow: 7px -7px #fff, 9px -9px $green

@@ -14,6 +14,7 @@
   letter-spacing: 3px
   font-size: 1.1em
   text-decoration: none
+  word-break: break-all
 
   transition: 0.2s ease
   cursor: pointer
@@ -47,10 +48,17 @@
   grid-row-gap: 100px
   width: 70%
 
+  @media (max-width: 900px)
+    font-size: 0.85em
+
   &__blocks
     display: grid
     grid-row-gap: 100px
     grid-template-columns: 1fr 1fr
+
+    @media (max-width: 900px)
+      grid-template-columns: 1fr
+      grid-row-gap: 50px
 
   &__blockone
     @include block($accent)

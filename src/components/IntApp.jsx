@@ -18,8 +18,8 @@ class IntApp extends Component {
           <p className="intapp__header">INTERCESSOR (mobile app):</p>
           <div className="intapp__to">
             <button className="intapp__to-learned">todo</button>
-            <button className="intweb__to-guide">guide</button>
-            <button className="intweb__to-software">tech</button>
+            <button className="intapp__to-guide">guide</button>
+            <button className="intapp__to-software">tech</button>
           </div>
           <p className="intapp__subheader">
             an environment to send and view prayer requests.
