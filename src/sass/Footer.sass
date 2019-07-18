@@ -19,31 +19,20 @@
 
   @media (max-width: 900px)
     flex-direction: column
-    align-items: flex-start
-
-  &__left
-    display: flex
-    flex-direction: row
     align-items: center
 
-    padding-top: 10px
-
-    a
-      text-decoration: none !important
-      color: $accent
-      margin-right: 40px
-
-      transition: 0.5s ease
-
-      &:hover
-        color: $red
-
-      @media (max-width: 900px)
-        margin-right: 15px
+    font-size: 0.9em
 
   &__contact
+    @media (max-width: 900px)
+      text-align: center
+      padding-top: 10px
+      margin: 0
+
+  &__credits
     text-align: right
 
     @media (max-width: 900px)
+      text-align: center
       padding-top: 10px
       margin: 0

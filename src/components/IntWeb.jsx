@@ -12,11 +12,19 @@ class IntWeb extends Component {
         <Header />
         <div className="intweb__top">
           <div className="intweb__links">
-            <a href="https://intercessor-web.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://intercessor-web.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               site{" "}
             </a>
             <a>|</a>
-            <a href="https://github.com/yanghakim/intercessor" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/yanghakim/intercessor"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {" "}
               code
             </a>
@@ -190,7 +198,7 @@ class IntWeb extends Component {
                 <br />
                 [2] use Google authentication with Gmail accounts
                 <br />
-                [3] share your group acronym to others
+                [3] share your user acronym with others
                 <br />
               </p>
             </div>
@@ -253,9 +261,9 @@ class IntWeb extends Component {
               <p className="intweb__guide-4-body">
                 [1] create/join groups (found in settings)
                 <br />
-                [2] share your user acronym to others
+                [2] share your user acronym with others
                 <br />
-                [3] share your group acronym to others
+                [3] share your group acronym with others
                 <br />
               </p>
             </div>

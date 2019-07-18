@@ -36,10 +36,18 @@ class Home extends Component {
               Node.JS [Express, MongoDB, Passport]
             </p>
           </NavLink>
-          <NavLink className="home__blockthree" to={"/foursl"}>
-            <p className="home__blockthree-title">
-              april 2019 | project three:
+          <NavLink className="home__blockthree" to={"/intland"}>
+            <p className="home__blockthree-title">july 2019 | project three:</p>
+            <p className="home__blockthree-name">intercessor.landing</p>
+            <p className="home__blockthree-description">
+              a WEB site serving as a landing page for intercessor.app
             </p>
+            <p className="home__blockthree-tech">
+              Javascript [React, SASS, HTML]
+            </p>
+          </NavLink>
+          <NavLink className="home__blockthree" to={"/foursl"}>
+            <p className="home__blockthree-title">april 2019 | project four:</p>
             <p className="home__blockthree-name">4 spiritual laws.html</p>
             <p className="home__blockthree-description">
               a WEB site navigating through the 4 SPIRITUAL LAWS
@@ -47,7 +55,7 @@ class Home extends Component {
             <p className="home__blockthree-tech">Javascript [HTML, CSS]</p>
           </NavLink>
           <NavLink className="home__blockfour" to={"/portfolio"}>
-            <p className="home__blockfour-title">present | project four:</p>
+            <p className="home__blockfour-title">ongoing | project five:</p>
             <p className="home__blockfour-name">personal portfolio</p>
             <p className="home__blockfour-description">
               a WEB site personal portfolio

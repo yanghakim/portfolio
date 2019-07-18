@@ -7,6 +7,7 @@
 
   @media (max-width: 900px)
     font-size: 0.8em
+    width: 80%
 
   span
     color: $purple
@@ -121,11 +122,13 @@
       color: $green
 
     &-body
-      display: flex
-      flex-direction: row
+      display: grid
+      grid-template-columns: 1fr 1fr
+
+      @media (max-width: 900px)
+        grid-template-columns: 1fr
 
     &-1
-      width: 50%
       &-body
         margin: 0 10px
         border-left: 2px dashed $accent
@@ -134,7 +137,6 @@
         text-align: justify
 
     &-2
-      width: 50%
       &-body
         margin: 0 10px
         border-left: 2px dashed $accent
@@ -148,6 +150,7 @@
     padding: 10px 20px
 
     color: $accent
+    text-align: justify
 
     transition: 0.25s ease-in-out
 
@@ -164,8 +167,9 @@
         padding: 0 15px
 
   &__body
-    display: flex
-    flex-direction: row
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-column-gap: 50px
 
     justify-content: space-between
 
@@ -177,6 +181,9 @@
     &:hover
       border-top: 2px dashed $purple
 
+    @media (max-width: 900px)
+      grid-template-columns: 1fr
+
   &__guide
     margin: 30px 0px
     border: 2px solid $accent
@@ -186,6 +193,10 @@
 
     box-shadow: -7px -7px #fff, -9px -9px $purple
     transition: 0.25s ease-in-out
+
+    @media (max-width: 900px)
+      width: 80%
+      margin: 30px 0 0 0
 
     &:hover
       box-shadow: -7px 7px #fff, -9px 9px $purple
@@ -201,12 +212,15 @@
   &__tech
     margin: 30px 0px
     border: 2px solid $accent
-    padding: 10px 20px
+    padding: 10px 30px
 
     width: 45%
 
     box-shadow: 7px 7px #fff, 9px 9px $green
     transition: 0.25s ease-in-out
+
+    @media (max-width: 900px)
+      width: 80%
 
     &:hover
       box-shadow: 7px -7px #fff, 9px -9px $green
