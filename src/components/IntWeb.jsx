@@ -1,17 +1,16 @@
 import React, { Component } from "react";
 
-import Header from "./Header";
-import Footer from "./Footer";
-
-import "../sass/IntWeb.sass";
+import "../sass/Project.sass";
 
 class IntWeb extends Component {
   render() {
     return (
-      <div className="intweb">
-        <Header />
-        <div className="intweb__top">
-          <div className="intweb__links">
+      <div className="project">
+        <div className="project__back" onClick={() => this.props.shrink(0)}>
+          <p className="project__back-text">back</p>
+        </div>
+        <div className="project__top">
+          <div className="project__links">
             <a
               href="https://intercessor-web.herokuapp.com/"
               target="_blank"
@@ -29,25 +28,25 @@ class IntWeb extends Component {
               code
             </a>
           </div>
-          <p className="intweb__header">INTERCESSOR:</p>
-          <div className="intweb__to">
-            <button className="intweb__to-learned">learned</button>
-            <button className="intweb__to-why">why</button>
-            <button className="intweb__to-guide">guide</button>
-            <button className="intweb__to-software">tech</button>
+          <p className="project__header">INTERCESSOR:</p>
+          <div className="project__to">
+            <button className="project__to-learned">learned</button>
+            <button className="project__to-why">why</button>
+            <button className="project__to-guide">guide</button>
+            <button className="project__to-software">tech</button>
           </div>
-          <p className="intweb__subheader">
+          <p className="project__subheader">
             an environment to send and view prayer requests.
           </p>
         </div>
-        <div className="intweb__learned">
-          <p className="intweb__learned-header">
+        <div className="project__learned">
+          <p className="project__learned-header">
             WHAT I LEARNED [may 2019 - july 2019]:
           </p>
-          <div className="intweb__learned-body">
-            <div className="intweb__learned-1">
-              <p className="intweb__learned-1-header">[I]: Create React App</p>
-              <p className="intweb__learned-1-body">
+          <div className="project__learned-body">
+            <div className="project__learned-1">
+              <p className="project__learned-1-header">[I]: Create React App</p>
+              <p className="project__learned-1-body">
                 - after 2 weeks of learning Javascript, I started my first react
                 app
                 <br />
@@ -60,11 +59,11 @@ class IntWeb extends Component {
                 </span>
               </p>
             </div>
-            <div className="intweb__learned-2">
-              <p className="intweb__learned-2-header">
+            <div className="project__learned-2">
+              <p className="project__learned-2-header">
                 [II]: Server Side Foundation
               </p>
-              <p className="intweb__learned-2-body">
+              <p className="project__learned-2-body">
                 - restructuring project to accomodate for server (Node.JS) and
                 client (Javascript) side code
                 <br />
@@ -81,9 +80,9 @@ class IntWeb extends Component {
                 <br />
               </p>
             </div>
-            <div className="intweb__learned-3">
-              <p className="intweb__learned-3-header">[III]: Routing</p>
-              <p className="intweb__learned-3-body">
+            <div className="project__learned-3">
+              <p className="project__learned-3-header">[III]: Routing</p>
+              <p className="project__learned-3-body">
                 - handle routes with async/await
                 <br />
                 - CRUD practices
@@ -100,9 +99,9 @@ class IntWeb extends Component {
                 </span>
               </p>
             </div>
-            <div className="intweb__learned-4">
-              <p className="intweb__learned-4-header">[IV]: Redux</p>
-              <p className="intweb__learned-4-body">
+            <div className="project__learned-4">
+              <p className="project__learned-4-header">[IV]: Redux</p>
+              <p className="project__learned-4-body">
                 - configure and connect Redux store with components, mapping
                 state to props
                 <br />
@@ -117,9 +116,9 @@ class IntWeb extends Component {
                 </span>
               </p>
             </div>
-            <div className="intweb__learned-4">
-              <p className="intweb__learned-4-header">[V]: QOL Practices</p>
-              <p className="intweb__learned-4-body">
+            <div className="project__learned-4">
+              <p className="project__learned-4-header">[V]: QOL Practices</p>
+              <p className="project__learned-4-body">
                 - component architecture: breaking down UI by components{" "}
                 <span>(login vs register)</span>
                 <br />- project architecture: grouping files by functionality{" "}
@@ -133,13 +132,13 @@ class IntWeb extends Component {
             </div>
           </div>
         </div>
-        <div className="intweb__why">
-          <p className="intweb__why-header">
+        <div className="project__why">
+          <p className="project__why-header">
             Q: WHY IS THIS FEATURED ON MY PORTFOLIO:
           </p>
-          <div className="intweb__why-body">
-            <div className="intweb__why-1">
-              <p className="intweb__why-1-body">
+          <div className="project__why-body">
+            <div className="project__why-1">
+              <p className="project__why-1-body">
                 A: This is definitely the most impressive thing I've made that I
                 can <span>visibly</span> showcase to the world. I use the word{" "}
                 <span>visibly</span> because I think most of the work I take
@@ -188,12 +187,14 @@ class IntWeb extends Component {
             </div>
           </div>
         </div>
-        <div className="intweb__body">
-          <div className="intweb__guide">
-            <p className="intweb__guide-header">GUIDEBOOK:</p>
-            <div className="intweb__guide-0">
-              <p className="intweb__guide-0-header">[join] create an account</p>
-              <p className="intweb__guide-0-body">
+        <div className="project__body">
+          <div className="project__guide">
+            <p className="project__guide-header">GUIDEBOOK:</p>
+            <div className="project__guide-0">
+              <p className="project__guide-0-header">
+                [join] create an account
+              </p>
+              <p className="project__guide-0-body">
                 [1] provide email and password
                 <br />
                 [2] use Google authentication with Gmail accounts
@@ -202,9 +203,11 @@ class IntWeb extends Component {
                 <br />
               </p>
             </div>
-            <div className="intweb__guide-1">
-              <p className="intweb__guide-1-header">[menu] pick your weapon:</p>
-              <p className="intweb__guide-1-body">
+            <div className="project__guide-1">
+              <p className="project__guide-1-header">
+                [menu] pick your weapon:
+              </p>
+              <p className="project__guide-1-body">
                 [a] view others' prayer requests
                 <br />
                 [b] enter a prayer environment
@@ -212,11 +215,11 @@ class IntWeb extends Component {
                 [c] send a prayer request
               </p>
             </div>
-            <div className="intweb__guide-2">
-              <p className="intweb__guide-2-header">
+            <div className="project__guide-2">
+              <p className="project__guide-2-header">
                 [a] view others' prayer requests:
               </p>
-              <p className="intweb__guide-2-body">
+              <p className="project__guide-2-body">
                 [1] selah
                 <br />
                 [2] prayer feed
@@ -226,17 +229,17 @@ class IntWeb extends Component {
                 <span>[4] sanctuary</span>
               </p>
 
-              <p className="intweb__guide-2-header">
+              <p className="project__guide-2-header">
                 [b] enter a prayer environment:
               </p>
-              <p className="intweb__guide-2-body">
+              <p className="project__guide-2-body">
                 <span>[1] sanctuary</span>
               </p>
 
-              <p className="intweb__guide-2-header">
+              <p className="project__guide-2-header">
                 [c] send a prayer request:
               </p>
-              <p className="intweb__guide-2-body">
+              <p className="project__guide-2-body">
                 [1] selah
                 <br />
                 [2] prayer request form
@@ -244,9 +247,9 @@ class IntWeb extends Component {
                 <span>[3] sanctuary</span>
               </p>
             </div>
-            <div className="intweb__guide-3">
-              <p className="intweb__guide-3-header">[end] sanctuary:</p>
-              <p className="intweb__guide-3-body">
+            <div className="project__guide-3">
+              <p className="project__guide-3-header">[end] sanctuary:</p>
+              <p className="project__guide-3-body">
                 [1] set timer OR let the Spirit lead
                 <br />
                 [2] set prayer topic OR let the Spirit lead
@@ -254,11 +257,11 @@ class IntWeb extends Component {
                 <span>[3] pray</span>
               </p>
             </div>
-            <div className="intweb__guide-4">
-              <p className="intweb__guide-4-header">
+            <div className="project__guide-4">
+              <p className="project__guide-4-header">
                 [share] to groups and personally:
               </p>
-              <p className="intweb__guide-4-body">
+              <p className="project__guide-4-body">
                 [1] create/join groups (found in settings)
                 <br />
                 [2] share your user acronym with others
@@ -268,11 +271,11 @@ class IntWeb extends Component {
               </p>
             </div>
           </div>
-          <div className="intweb__tech">
-            <p className="intweb__tech-header">SOFTWARE INFRASTRUCTURE:</p>
-            <div className="intweb__tech-1">
-              <p className="intweb__tech-1-header">[front-end] Javascript:</p>
-              <p className="intweb__tech-1-body">
+          <div className="project__tech">
+            <p className="project__tech-header">SOFTWARE INFRASTRUCTURE:</p>
+            <div className="project__tech-1">
+              <p className="project__tech-1-header">[front-end] Javascript:</p>
+              <p className="project__tech-1-body">
                 [React.JS] component based app
                 <br />
                 <span className="indent">
@@ -300,9 +303,9 @@ class IntWeb extends Component {
                 [Sass] css extension
               </p>
             </div>
-            <div className="intweb__tech-2">
-              <p className="intweb__tech-2-header">[back-end] Node.js:</p>
-              <p className="intweb__tech-2-body">
+            <div className="project__tech-2">
+              <p className="project__tech-2-header">[back-end] Node.js:</p>
+              <p className="project__tech-2-body">
                 [Express] web framework -> route handlers
                 <br />
                 <br />
@@ -325,7 +328,6 @@ class IntWeb extends Component {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     );
   }

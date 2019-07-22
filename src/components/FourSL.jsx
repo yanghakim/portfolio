@@ -1,59 +1,63 @@
 import React, { Component } from "react";
 
-import Header from "./Header";
-import Footer from "./Footer";
-
-import "../sass/FourSL.sass";
+import "../sass/Project.sass";
 
 class FourSL extends Component {
   render() {
     return (
-      <div className="foursl">
-        <Header />
-        <div className="foursl__top">
-          <div className="foursl__links">
-            <a href="https://fslaws.netlify.com/index.html" target="_blank" rel="noopener noreferrer">
+      <div className="project">
+        <div className="project__back" onClick={() => this.props.shrink(0)}>
+          <p className="project__back-text">back</p>
+        </div>
+        <div className="project__top">
+          <div className="project__links">
+            <a
+              href="https://fslaws.netlify.com/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               site{" "}
             </a>
             <a>|</a>
             <a
               href="https://github.com/yeggyseo/four-spiritual-laws"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {" "}
               code
             </a>
           </div>
-          <p className="foursl__header">FOUR SPIRITUAL LAWS:</p>
-          <div className="foursl__to">
-            <button className="foursl__to-learned">learned</button>
-            <button className="intweb__to-why">why</button>
-            <button className="foursl__to-guide">guide</button>
-            <button className="foursl__to-software">tech</button>
+          <p className="project__header">FOUR SPIRITUAL LAWS:</p>
+          <div className="project__to">
+            <button className="project__to-learned">learned</button>
+            <button className="project__to-why">why</button>
+            <button className="project__to-guide">guide</button>
+            <button className="project__to-software">tech</button>
           </div>
-          <p className="foursl__subheader">
+          <p className="project__subheader">
             a quick walkthrough of the four spiritual laws.
           </p>
         </div>
-        <div className="foursl__learned">
-          <p className="foursl__learned-header">WHAT I LEARNED:</p>
-          <div className="foursl__learned-body">
-            <div className="foursl__learned-1">
-              <p className="foursl__learned-1-header">
+        <div className="project__learned">
+          <p className="project__learned-header">WHAT I LEARNED:</p>
+          <div className="project__learned-body">
+            <div className="project__learned-1">
+              <p className="project__learned-1-header">
                 [I]: Returning to coding
               </p>
-              <p className="foursl__learned-1-body">
+              <p className="project__learned-1-body">
                 - this was my first attempt back at coding since 2015
                 <br />
                 - brushed up on HTML and CSS
                 <br />
               </p>
             </div>
-            <div className="foursl__learned-2">
-              <p className="foursl__learned-2-header">
+            <div className="project__learned-2">
+              <p className="project__learned-2-header">
                 [II]: Learning new things
               </p>
-              <p className="foursl__learned-2-body">
+              <p className="project__learned-2-body">
                 - learned git
                 <br />
                 - learned command line prompts for git and directory navigation
@@ -68,13 +72,13 @@ class FourSL extends Component {
             </div>
           </div>
         </div>
-        <div className="foursl__why">
-          <p className="foursl__why-header">
+        <div className="project__why">
+          <p className="project__why-header">
             Q: WHY IS THIS FEATURED ON MY PORTFOLIO:
           </p>
-          <div className="foursl__why-body">
-            <div className="foursl__why-1">
-              <p className="foursl__why-1-body">
+          <div className="project__why-body">
+            <div className="project__why-1">
+              <p className="project__why-1-body">
                 A: This is definitely not the most impressive thing I've made -
                 but it was quite awe-strucking during development. I think a few
                 days after deciding to studying coding again, I quickly went to
@@ -92,12 +96,12 @@ class FourSL extends Component {
             </div>
           </div>
         </div>
-        <div className="foursl__body">
-          <div className="foursl__guide">
-            <p className="foursl__guide-header">GUIDEBOOK:</p>
-            <div className="foursl__guide-1">
-              <p className="foursl__guide-1-header">[menu] the four laws:</p>
-              <p className="foursl__guide-1-body">
+        <div className="project__body">
+          <div className="project__guide">
+            <p className="project__guide-header">GUIDEBOOK:</p>
+            <div className="project__guide-1">
+              <p className="project__guide-1-header">[menu] the four laws:</p>
+              <p className="project__guide-1-body">
                 [1] Love
                 <br />
                 [2] Sin
@@ -108,11 +112,11 @@ class FourSL extends Component {
               </p>
             </div>
           </div>
-          <div className="foursl__tech">
-            <p className="foursl__tech-header">SOFTWARE INFRASTRUCTURE:</p>
-            <div className="foursl__tech-1">
-              <p className="foursl__tech-1-header">[front-end] Javascript:</p>
-              <p className="foursl__tech-1-body">
+          <div className="project__tech">
+            <p className="project__tech-header">SOFTWARE INFRASTRUCTURE:</p>
+            <div className="project__tech-1">
+              <p className="project__tech-1-header">[front-end] Javascript:</p>
+              <p className="project__tech-1-body">
                 [HTML]
                 <br />
                 [CSS]
@@ -120,7 +124,6 @@ class FourSL extends Component {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     );
   }
