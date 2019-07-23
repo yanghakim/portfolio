@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
 
-import "../sass/Project.sass";
+import "../../sass/Project.sass";
 
 class IntLand extends Component {
   render() {

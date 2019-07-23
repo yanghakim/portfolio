@@ -1,6 +1,5 @@
 @import "./variables.sass"
-@import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap')
-@import url('https://fonts.googleapis.com/css?family=Karla|Space+Mono&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Space+Mono|Bungee+Shade&display=swap')
 
 .projects
   width: 100%
@@ -9,11 +8,17 @@
   display: grid
   grid-template-columns: 1fr 3fr
 
+  background-color: white
+
   transition: 1s ease-in-out
-  animation: fadeIn 1s ease-in-out forwards
+  animation: fadeIn 2s ease-in-out forwards
 
   &.grow
     grid-template-columns: 0 3fr
+    animation: fadeOut 1s ease-in-out forwards
+
+  &.shrink
+    grid-template-columns: 1 3fr
     animation: fadeOut 1s ease-in-out forwards
 
   &__items

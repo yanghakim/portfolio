@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "../sass/Project.sass";
+import "../../sass/Project.sass";
 
 class FourSL extends Component {
   render() {

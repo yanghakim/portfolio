@@ -1,5 +1,5 @@
 @import "./variables.sass"
-@import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Space+Mono|Bungee+Shade&display=swap')
 
 body
   margin: 0
@@ -17,6 +17,24 @@ body
 
   &::-webkit-scrollbar
     width: 0 !important
+
+  &__greeting
+    display: flex
+    flex-direction: row
+
+    color: $accent
+    font-family: "Space Mono", monospace
+
+    position: absolute
+    left: 2%
+    top: 3%
+
+    z-index: 0
+    animation: bouncing 1s ease-in-out 1s infinite alternate
+
+    &-text
+      margin-top: 4px
+      margin-left: 10px
 
 .home
   width: 70%

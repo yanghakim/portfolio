@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
 
-import "../sass/Project.sass";
+import "../../sass/Project.sass";
 
 class IntApp extends Component {
   render() {
@@ -28,10 +27,10 @@ class IntApp extends Component {
           <p className="project__learned-header">WHAT I ANTICIPATE LEARNING:</p>
           <div className="project__learned-body">
             <div className="project__learned-1">
-              <p className="project__learned-1-header">[I]: React Native</p>
+              <p className="project__learned-1-header">[I]: Swift</p>
               <p className="project__learned-1-body">
-                - carefully navigating differences between react-native and
-                react
+                - currently navigating through Swift documentation
+                <br />- following UDEMY course on iOS app development
               </p>
             </div>
             <div className="project__learned-2">
@@ -49,9 +48,7 @@ class IntApp extends Component {
           <div className="project__guide">
             <p className="project__guide-header">GUIDEBOOK:</p>
             <div className="project__guide-1">
-              <NavLink className="project__guide-1-header" to={"/intweb"}>
-                see INTERCESSOR.web:
-              </NavLink>
+              <p className="project__guide-1-header">see INTERCESSOR.web:</p>
             </div>
           </div>
           <div className="project__tech">

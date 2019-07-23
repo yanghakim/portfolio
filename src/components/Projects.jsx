@@ -2,15 +2,15 @@ import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import Typing from "react-typing-animation";
 
-import About from "./About";
-import IntWeb from "../IntWeb";
-import IntApp from "../IntApp";
-import IntLand from "../IntLand";
-import FourSL from "../FourSL";
+import About from "./home/About";
+import IntWeb from "./projects/IntWeb";
+import IntApp from "./projects/IntApp";
+import IntLand from "./projects/IntLand";
+import FourSL from "./projects/FourSL";
 
-import icon from "../../images/favicon.png";
+import icon from "../images/favicon.png";
 
-import "../../sass/Projects.sass";
+import "../sass/Projects.sass";
 
 class Projects extends Component {
   constructor() {
