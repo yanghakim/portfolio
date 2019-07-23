@@ -34,12 +34,14 @@
 
     &::-webkit-scrollbar
       width: 0.5em
+      height: 0.5em
       background-color: none
       border-left: 2px dashed $purple
 
     &::-webkit-scrollbar-thumb
-      border-top: 2px dashed $purple
-      border-bottom: 2px dashed $purple
+      border: 2px dashed $purple
+      border-right: none
+      background-color: lighten($purple, 40%)
 
     &__item
       color: $purple
