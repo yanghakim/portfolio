@@ -22,6 +22,10 @@ class Projects extends Component {
     };
   }
 
+  componentDidMount() {
+    this.props.setPage("yanghakim/projects");
+  }
+
   grow = num => {
     this.setState({
       growFontAnimationClass: "projects__items grow",
@@ -30,6 +34,8 @@ class Projects extends Component {
     });
 
     this.props.expand();
+
+    this.props.setPage("yanghakim/projects");
   };
 
   shrink = num => {
@@ -40,21 +46,23 @@ class Projects extends Component {
     });
 
     this.props.shrink();
+
+    this.props.setPage("yanghakim/projects");
   };
 
   projectChoice = num => {
     switch (num) {
       case 1:
-        return <IntWeb shrink={this.shrink} />;
+        return <IntWeb shrink={this.shrink} setPage={this.props.setPage} />;
         break;
       case 2:
-        return <IntApp shrink={this.shrink} />;
+        return <IntApp shrink={this.shrink} setPage={this.props.setPage} />;
         break;
       case 3:
-        return <IntLand shrink={this.shrink} />;
+        return <IntLand shrink={this.shrink} setPage={this.props.setPage} />;
         break;
       case 4:
-        return <FourSL shrink={this.shrink} />;
+        return <FourSL shrink={this.shrink} setPage={this.props.setPage} />;
         break;
       case 0:
         return <About />;

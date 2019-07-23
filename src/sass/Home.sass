@@ -41,6 +41,24 @@ body
 
       transform: rotate(90deg)
 
+  .page
+    position: absolute
+    bottom: 5%
+    left: 5%
+
+    color: $shadow
+    font-family: "Space Mono", monospace
+
+    background-color: #f4f4f4
+    padding: 3px 7px
+    border-radius: 0 5px 5px 0
+    border: 1.3px solid $shadow
+
+    box-shadow: -5px 0px rgba(0, 0, 0, 0), -7px 0px $shadow
+
+    transition: 1s ease-in-out
+    animation: fadeIn 2s ease-in-out forwards, bouncing 1s ease-in-out 1s infinite alternate
+
 .home
   width: 70%
   height: 70vh

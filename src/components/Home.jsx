@@ -13,9 +13,16 @@ class Home extends Component {
 
     this.state = {
       borderAnimationClass: "home",
-      projects: false
+      projects: false,
+      page: "yanghakim"
     };
   }
+
+  setPage = page => {
+    this.setState({
+      page
+    });
+  };
 
   border = () => {
     this.setState(
@@ -62,9 +69,14 @@ class Home extends Component {
         <div className={this.state.borderAnimationClass}>
           {!this.state.projects && <Greeting transition={this.border} />}
           {this.state.projects && (
-            <Projects expand={this.expand} shrink={this.shrink} />
+            <Projects
+              expand={this.expand}
+              shrink={this.shrink}
+              setPage={this.setPage}
+            />
           )}
         </div>
+        <p className="page">{this.state.page}</p>
       </div>
     );
   }

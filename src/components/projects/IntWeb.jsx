@@ -3,6 +3,10 @@ import React, { Component } from "react";
 import "../../sass/Project.sass";
 
 class IntWeb extends Component {
+  componentDidMount() {
+    this.props.setPage("yanghakim/projects/Intercessor (web)");
+  }
+
   render() {
     return (
       <div className="project">

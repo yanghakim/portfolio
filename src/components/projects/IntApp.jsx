@@ -3,6 +3,9 @@ import React, { Component } from "react";
 import "../../sass/Project.sass";
 
 class IntApp extends Component {
+  componentDidMount() {
+    this.props.setPage("yanghakim/projects/Intercessor (mobile)");
+  }
   render() {
     return (
       <div className="project">

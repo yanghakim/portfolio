@@ -3,6 +3,10 @@ import React, { Component } from "react";
 import "../../sass/Project.sass";
 
 class FourSL extends Component {
+  componentDidMount() {
+    this.props.setPage("yanghakim/projects/Four Spiritual Laws");
+  }
+
   render() {
     return (
       <div className="project">

@@ -3,6 +3,9 @@ import React, { Component } from "react";
 import "../../sass/Project.sass";
 
 class IntLand extends Component {
+  componentDidMount() {
+    this.props.setPage("yanghakim/projects/Intercessor (landing page)");
+  }
   render() {
     return (
       <div className="project">
