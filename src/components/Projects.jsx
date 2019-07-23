@@ -113,12 +113,7 @@ class Projects extends Component {
             </p>
           </div>
         </div>
-        <div
-          className="projects__desc"
-          onClick={() => {
-            this.setState({ num: 0 });
-          }}
-        >
+        <div className="projects__desc">
           {this.projectChoice(this.state.num)}
         </div>
       </div>

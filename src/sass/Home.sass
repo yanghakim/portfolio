@@ -20,21 +20,26 @@ body
 
   &__greeting
     display: flex
-    flex-direction: row
+    flex-direction: column
 
-    color: $accent
+    color: $purple
     font-family: "Space Mono", monospace
 
     position: absolute
-    left: 2%
+    right: 0
     top: 3%
 
     z-index: 0
-    animation: bouncing 1s ease-in-out 1s infinite alternate
+    animation: fadeIn 2s ease-in-out forwards, bouncing 1s ease-in-out 1s infinite alternate
+
+    img
+      margin-left: 58px
 
     &-text
-      margin-top: 4px
       margin-left: 10px
+      margin-top: 70px
+
+      transform: rotate(90deg)
 
 .home
   width: 70%

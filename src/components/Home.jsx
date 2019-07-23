@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import Typing from "react-typing-animation";
 
 import Greeting from "./home/Greeting";
 import Projects from "./Projects";
 
-import icon from "../images/favicon.png";
+import icon from "../images/birdpurp.png";
 
 import "../sass/Home.sass";
 
@@ -53,11 +52,9 @@ class Home extends Component {
             <img src={icon} alt="yangha kim" width="50" height="50" />
 
             <p className="container__greeting-text">
-              <Typing>
-                Yangha Kim
-                <br />
-                Based in Philly
-              </Typing>
+              Yangha Kim
+              <br />
+              Based in Philly
             </p>
           </div>
         )}
