@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
 import Typing from "react-typing-animation";
 
 import About from "./home/About";
