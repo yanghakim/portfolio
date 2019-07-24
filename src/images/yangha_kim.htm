@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="shortcut icon" href="http://localhost:3000/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>yangha_kim</title>
+  <style type="text/css">@keyframes dqlsZT {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+
+}@-webkit-keyframes dqlsZT {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+
+}</style><style type="text/css">.efaGep { 
+  font-weight: 100;
+  color: black;
+  font-size: 1em;
+  padding-left: 2px;
+  animation: dqlsZT 1s step-end infinite;
+  -webkit-animation: dqlsZT 1s step-end infinite;
+ }</style><style type="text/css">@import url(https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap);</style><style type="text/css">@keyframes bouncing {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(10px); } }
+
+@keyframes bouncingSideways {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(10px); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes blueToPurple {
+  0% {
+    border: 2px solid #4579D4; }
+  100% {
+    border: 2px solid #D62CC2; } }
+
+@keyframes purpleToGreenScroll {
+  0% {
+    border: 2px solid #D62CC2; }
+  100% {
+    border: 2px solid #A5BE00; } }
+
+@keyframes expand {
+  0% {
+    width: 70%;
+    height: 70vh; }
+  100% {
+    height: 90vh;
+    width: 80vw; } }
+
+@keyframes shrink {
+  0% {
+    height: 90vh;
+    width: 80vw; }
+  100% {
+    width: 70%;
+    height: 70vh; } }
+
+.greeting {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  transition: 1s ease; }
+  .greeting.fadeout {
+    opacity: 0; }
+  .greeting__greeting {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    font-family: 'Space Mono', monospace;
+    color: #4579D4;
+    letter-spacing: -0.5px;
+    text-decoration: none !important;
+    transition: 1s ease; }
+    .greeting__greeting img {
+      margin-top: 65px;
+      margin-right: 30px;
+      animation: bouncing 1s ease-in-out infinite alternate; }
+      @media (max-width: 900px) {
+        .greeting__greeting img {
+          margin-top: 40px; } }
+    .greeting__greeting-text {
+      display: flex;
+      flex-direction: column; }
+    .greeting__greeting-name {
+      margin-bottom: -30px;
+      font-size: 4em;
+      font-family: 'Bungee Shade', monospace; }
+      @media (max-width: 900px) {
+        .greeting__greeting-name {
+          font-size: 3em; } }
+</style><style type="text/css">@keyframes bouncing {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(10px); } }
+
+@keyframes bouncingSideways {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(10px); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes blueToPurple {
+  0% {
+    border: 2px solid #4579D4; }
+  100% {
+    border: 2px solid #D62CC2; } }
+
+@keyframes purpleToGreenScroll {
+  0% {
+    border: 2px solid #D62CC2; }
+  100% {
+    border: 2px solid #A5BE00; } }
+
+@keyframes expand {
+  0% {
+    width: 70%;
+    height: 70vh; }
+  100% {
+    height: 90vh;
+    width: 80vw; } }
+
+@keyframes shrink {
+  0% {
+    height: 90vh;
+    width: 80vw; }
+  100% {
+    width: 70%;
+    height: 70vh; } }
+
+.about {
+  height: 100%;
+  width: 100%;
+  font-family: "Space Mono", monospace;
+  color: #D62CC2;
+  opacity: 0;
+  position: relative;
+  animation: fadeIn 1s ease forwards; }
+  .about-title {
+    color: #4579D4; }
+  .about-footer {
+    position: absolute;
+    bottom: 5%;
+    color: #4579D4; }
+    @media (max-height: 800px), (max-width: 900px) {
+      .about-footer {
+        position: static;
+        margin: 40px 0; } }
+</style><style type="text/css">@keyframes bouncing {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(10px); } }
+
+@keyframes bouncingSideways {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(10px); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes blueToPurple {
+  0% {
+    border: 2px solid #4579D4; }
+  100% {
+    border: 2px solid #D62CC2; } }
+
+@keyframes purpleToGreenScroll {
+  0% {
+    border: 2px solid #D62CC2; }
+  100% {
+    border: 2px solid #A5BE00; } }
+
+@keyframes expand {
+  0% {
+    width: 70%;
+    height: 70vh; }
+  100% {
+    height: 90vh;
+    width: 80vw; } }
+
+@keyframes shrink {
+  0% {
+    height: 90vh;
+    width: 80vw; }
+  100% {
+    width: 70%;
+    height: 70vh; } }
+
+.project {
+  color: #4579D4;
+  font-family: 'Space Mono', monospace;
+  padding: 0 5% 0 6%;
+  animation: fadeIn 2s ease-in-out forwards; }
+  @media (max-width: 900px) {
+    .project {
+      font-size: 0.8em;
+      padding: 0 5% 0 8%; } }
+  @media (max-width: 600px) {
+    .project {
+      font-size: 0.8em;
+      padding: 0 5% 0 10%; } }
+  .project span {
+    color: #D62CC2; }
+  .project__back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    border-right: 2px solid #D62CC2;
+    border-bottom: 2px solid #D62CC2;
+    color: #D62CC2;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 2s forwards;
+    transition: 0.5s ease-in-out;
+    cursor: pointer; }
+    @media (max-width: 900px) {
+      .project__back {
+        width: 15px; } }
+    .project__back:hover {
+      color: white;
+      background-color: #D62CC2; }
+    .project__back-text {
+      transform: rotate(-90deg);
+      transform-origin: top 0;
+      font-family: "Space Mono", monospace;
+      letter-spacing: 5px;
+      margin-left: -15px; }
+      @media (max-width: 900px) {
+        .project__back-text {
+          margin-left: -19px; } }
+  .project__top {
+    display: grid;
+    grid-template-columns: 5fr 1fr; }
+  .project__links {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: row; }
+    .project__links a {
+      color: #D62CC2;
+      text-decoration: none;
+      transition: 0.3s ease; }
+      .project__links a:hover {
+        color: #E01854; }
+  .project__header {
+    font-size: 1.2em;
+    letter-spacing: 3px; }
+  .project__subheader {
+    opacity: 0.9;
+    margin: 0; }
+  .project__to {
+    grid-row: 2 / span 2;
+    grid-column: 2;
+    justify-self: end;
+    align-self: flex-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+    width: 90px; }
+    @media (max-width: 900px) {
+      .project__to {
+        height: 60px;
+        width: 60px; } }
+    .project__to-learned {
+      grid-column: 1 / span 2;
+      background: none;
+      border: 2px solid #4579D4;
+      outline: none;
+      padding: 0;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.7em;
+      color: #4579D4; }
+    .project__to-why {
+      grid-column: 1 / span 2;
+      background: none;
+      border: 2px solid #4579D4;
+      border-top: none;
+      outline: none;
+      padding: 0;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.7em;
+      color: #4579D4; }
+    .project__to-guide {
+      background: none;
+      border: none;
+      border-left: 2px solid #4579D4;
+      border-bottom: 2px solid #4579D4;
+      outline: none;
+      padding: 0;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.7em;
+      color: #4579D4; }
+      @media (max-width: 900px) {
+        .project__to-guide {
+          grid-column: 1 / span 2;
+          border-right: 2px solid #4579D4; } }
+    .project__to-software {
+      background: none;
+      border: none;
+      border-right: 2px solid #4579D4;
+      border-left: 2px solid #4579D4;
+      border-bottom: 2px solid #4579D4;
+      outline: none;
+      padding: 0;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.7em;
+      color: #4579D4; }
+      @media (max-width: 900px) {
+        .project__to-software {
+          grid-column: 1 / span 2; } }
+  .project__learned {
+    margin: 30px 0;
+    border-top: 2px dashed #D62CC2;
+    padding: 10px 20px;
+    color: #4579D4;
+    transition: 0.25s ease-in-out; }
+    @media (max-width: 900px) {
+      .project__learned {
+        padding: 10px 0; } }
+    .project__learned-body {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 30px; }
+      @media (max-width: 900px) {
+        .project__learned-body {
+          grid-template-columns: 1fr;
+          grid-row-gap: 5px;
+          text-align: justify; } }
+    .project__learned-1-header {
+      color: #A5BE00; }
+    .project__learned-1-body {
+      margin: 0 10px;
+      border-left: 2px dashed #A5BE00;
+      padding: 0 15px; }
+    .project__learned-1 .sm-indent {
+      margin-left: 3px;
+      padding-left: 10px;
+      border-left: 2px dashed #4579D4;
+      color: #4579D4;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone; }
+    .project__learned-2-header {
+      color: #A5BE00; }
+    .project__learned-2-body {
+      margin: 0 10px;
+      border-left: 2px dashed #A5BE00;
+      padding: 0 15px; }
+    .project__learned-3-header {
+      color: #A5BE00; }
+    .project__learned-3-body {
+      margin: 0 10px;
+      border-left: 2px dashed #A5BE00;
+      padding: 0 15px; }
+    .project__learned-4-header {
+      color: #A5BE00; }
+    .project__learned-4-body {
+      margin: 0 10px;
+      border-left: 2px dashed #A5BE00;
+      padding: 0 15px; }
+  .project__why {
+    margin: 30px 0;
+    border-top: 2px dashed #D62CC2;
+    padding: 10px 20px;
+    color: #4579D4;
+    transition: 0.25s ease-in-out; }
+    @media (max-width: 900px) {
+      .project__why {
+        padding: 10px 0;
+        text-align: justify; } }
+    .project__why:hover {
+      border-top: 2px dashed #D62CC2; }
+    .project__why-1-body {
+      margin: 0 10px;
+      border-left: 2px dashed #D62CC2;
+      padding: 0 15px; }
+  .project__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    justify-content: space-between;
+    border-top: 2px dashed #D62CC2;
+    border-bottom: 2px dashed #D62CC2;
+    padding: 20px 0;
+    margin-bottom: 30px; }
+    .project__body:hover {
+      border-top: 2px dashed #D62CC2; }
+    @media (max-width: 1200px) {
+      .project__body {
+        grid-template-columns: 1fr; } }
+  .project__guide {
+    margin: 30px 0px;
+    border: 2px solid #4579D4;
+    padding: 10px 30px;
+    box-shadow: -7px -7px #fff, -9px -9px #D62CC2;
+    transition: 0.25s ease-in-out; }
+    @media (max-width: 1200px) {
+      .project__guide {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: -28px; } }
+    .project__guide:hover {
+      box-shadow: -7px 7px #fff, -9px 9px #D62CC2; }
+    .project__guide-header {
+      letter-spacing: 2px; }
+      @media (max-width: 1200px) {
+        .project__guide-header {
+          grid-column: 1 / span 2; } }
+    .project__guide-0-body {
+      color: #394A60;
+      margin-left: 10px; }
+    .project__guide-1-body {
+      color: #394A60;
+      margin-left: 10px; }
+    .project__guide-2 {
+      margin-left: 14px;
+      border-left: 2px dashed #D62CC2;
+      padding-left: 15px; }
+      .project__guide-2-body {
+        color: #394A60;
+        margin-left: 10px; }
+      @media (max-width: 1200px) {
+        .project__guide-2 {
+          grid-row: 2 / span 2;
+          grid-column: 2; } }
+    .project__guide-3-header {
+      color: #D62CC2; }
+    .project__guide-3-body {
+      color: #394A60;
+      margin-left: 10px; }
+    @media (max-width: 1200px) {
+      .project__guide-3 {
+        grid-row: 4;
+        grid-column: 2; } }
+    .project__guide-4 {
+      margin-top: 2px dashed #D62CC2; }
+      .project__guide-4-body {
+        color: #394A60;
+        margin-left: 10px; }
+  .project__tech {
+    margin: 30px 0px;
+    border: 2px solid #4579D4;
+    padding: 10px 30px;
+    height: auto;
+    box-shadow: 7px 7px #fff, 9px 9px #A5BE00;
+    transition: 0.25s ease-in-out; }
+    @media (max-width: 900px) {
+      .project__tech {
+        width: 100%;
+        margin-left: -28px; } }
+    .project__tech:hover {
+      box-shadow: 7px -7px #fff, 9px -9px #A5BE00; }
+    .project__tech-header {
+      letter-spacing: 3px; }
+    .project__tech .indent {
+      margin: 10px;
+      color: #A5BE00; }
+    .project__tech-1-body {
+      margin-left: 5px;
+      border-left: 2px dashed #A5BE00;
+      padding-left: 15px; }
+    .project__tech-2-body {
+      margin-left: 5px;
+      border-left: 2px dashed #A5BE00;
+      padding-left: 15px; }
+</style><style type="text/css">@import url(https://fonts.googleapis.com/css?family=Space+Mono|Bungee+Shade&display=swap);</style><style type="text/css">@keyframes bouncing {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(10px); } }
+
+@keyframes bouncingSideways {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(10px); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes blueToPurple {
+  0% {
+    border: 2px solid #4579D4; }
+  100% {
+    border: 2px solid #D62CC2; } }
+
+@keyframes purpleToGreenScroll {
+  0% {
+    border: 2px solid #D62CC2; }
+  100% {
+    border: 2px solid #A5BE00; } }
+
+@keyframes expand {
+  0% {
+    width: 70%;
+    height: 70vh; }
+  100% {
+    height: 90vh;
+    width: 80vw; } }
+
+@keyframes shrink {
+  0% {
+    height: 90vh;
+    width: 80vw; }
+  100% {
+    width: 70%;
+    height: 70vh; } }
+
+.projects {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color: white;
+  transition: 1s ease-in-out;
+  animation: fadeIn 2s ease-in-out forwards; }
+  @media (max-width: 900px) {
+    .projects {
+      grid-template-columns: 1fr;
+      grid-template-rows: 2.5fr 3fr; } }
+  .projects.grow {
+    grid-template-columns: 0 3fr;
+    animation: fadeOut 1s ease-in-out forwards; }
+    @media (max-width: 900px) {
+      .projects.grow {
+        grid-template-rows: 3fr; } }
+  .projects.shrink {
+    grid-template-columns: 1 3fr;
+    animation: fadeOut 1s ease-in-out forwards; }
+  .projects__items {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    border-right: 2px dashed #D62CC2;
+    overflow-y: scroll; }
+    @media (max-width: 900px) {
+      .projects__items {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        border-right: none;
+        border-bottom: 2px solid #4579D4;
+        background-color: #fcf0fb; } }
+    .projects__items.grow {
+      border-right: none; }
+    .projects__items::-webkit-scrollbar {
+      width: 0.5em;
+      height: 0.5em;
+      background-color: none;
+      border-left: 2px dashed #D62CC2; }
+    .projects__items::-webkit-scrollbar-thumb {
+      border: 2px dashed #D62CC2;
+      border-right: none;
+      background-color: #f7d7f3; }
+    .projects__items__item {
+      color: #D62CC2;
+      font-family: "Space Mono", monospace;
+      font-size: 0.8em;
+      border-bottom: 2px dashed #D62CC2;
+      padding: 5%;
+      opacity: 0;
+      transition: 0.5s ease;
+      cursor: pointer; }
+      .projects__items__item:hover {
+        background-color: #ebf0fa;
+        color: #4579D4; }
+      .projects__items__item.one {
+        animation: fadeIn 1s ease 0.5s forwards; }
+        @media (max-width: 900px) {
+          .projects__items__item.one {
+            border-right: 2px dashed #D62CC2; } }
+      .projects__items__item.two {
+        animation: fadeIn 1s ease 1s forwards; }
+      .projects__items__item.three {
+        animation: fadeIn 1s ease 1.5s forwards; }
+        @media (max-width: 900px) {
+          .projects__items__item.three {
+            border-bottom: none;
+            border-right: 2px dashed #D62CC2; } }
+      .projects__items__item.four {
+        animation: fadeIn 1s ease 2s forwards;
+        border-bottom: none; }
+      .projects__items__item-title {
+        font-size: 1.5em;
+        margin: -5px 0;
+        padding-bottom: 10px;
+        border-bottom: 2px dashed #D62CC2; }
+      .projects__items__item-desc {
+        margin: 20px 0 0 0;
+        font-size: 1.1em; }
+  .projects__desc {
+    font-family: "Space Mono", monospace;
+    color: #D62CC2;
+    padding: 3%;
+    opacity: 0;
+    position: relative;
+    animation: fadeIn 1s ease forwards;
+    overflow-y: scroll; }
+    .projects__desc::-webkit-scrollbar {
+      width: 1em;
+      background-color: none;
+      border-left: 2px dashed #D62CC2; }
+      @media (max-width: 900px) {
+        .projects__desc::-webkit-scrollbar {
+          width: 0.5em; } }
+    .projects__desc::-webkit-scrollbar-thumb {
+      background-color: #D62CC2; }
+</style><style type="text/css">@import url(https://fonts.googleapis.com/css?family=Space+Mono|Bungee+Shade&display=swap);</style><style type="text/css">@keyframes bouncing {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(10px); } }
+
+@keyframes bouncingSideways {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(10px); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes blueToPurple {
+  0% {
+    border: 2px solid #4579D4; }
+  100% {
+    border: 2px solid #D62CC2; } }
+
+@keyframes purpleToGreenScroll {
+  0% {
+    border: 2px solid #D62CC2; }
+  100% {
+    border: 2px solid #A5BE00; } }
+
+@keyframes expand {
+  0% {
+    width: 70%;
+    height: 70vh; }
+  100% {
+    height: 90vh;
+    width: 80vw; } }
+
+@keyframes shrink {
+  0% {
+    height: 90vh;
+    width: 80vw; }
+  100% {
+    width: 70%;
+    height: 70vh; } }
+
+body {
+  margin: 0;
+  height: 100vh; }
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+  .container::-webkit-scrollbar {
+    width: 0 !important; }
+  .container__greeting {
+    display: flex;
+    flex-direction: column;
+    color: #D62CC2;
+    font-family: "Space Mono", monospace;
+    position: absolute;
+    right: 0;
+    top: 3%;
+    z-index: 0;
+    animation: fadeIn 2s ease-in-out forwards, bouncing 1s ease-in-out 1s infinite alternate; }
+    .container__greeting img {
+      margin-left: 58px; }
+    .container__greeting-text {
+      margin-left: 10px;
+      margin-top: 70px;
+      transform: rotate(90deg); }
+  .container .sidebar {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    transition: 1s ease-in-out;
+    animation: fadeIn 2s ease-in-out forwards, bouncing 1s ease-in-out 1s infinite alternate; }
+    .container .sidebar__colors {
+      color: #394A60;
+      font-family: "Space Mono", monospace;
+      padding-left: 7px;
+      box-shadow: -5px 0px rgba(0, 0, 0, 0), -7px 0px #394A60;
+      background-color: #f4f4f4;
+      padding: 3px 7px;
+      border-radius: 0 5px 5px 0;
+      border: 1.3px solid #394A60;
+      max-width: 210px; }
+      .container .sidebar__colors-blue {
+        color: #4579D4;
+        font-family: "Space Mono", monospace;
+        padding-left: 7px;
+        box-shadow: -5px 0px rgba(0, 0, 0, 0), -7px 0px #4579D4; }
+      .container .sidebar__colors-purple {
+        color: #D62CC2;
+        font-family: "Space Mono", monospace;
+        padding-left: 7px;
+        box-shadow: -5px 0px rgba(0, 0, 0, 0), -7px 0px #D62CC2; }
+      .container .sidebar__colors-green {
+        color: #A5BE00;
+        font-family: "Space Mono", monospace;
+        padding-left: 7px;
+        box-shadow: -5px 0px rgba(0, 0, 0, 0), -7px 0px #A5BE00; }
+    .container .sidebar__page {
+      color: #394A60;
+      font-family: "Space Mono", monospace;
+      background-color: #f4f4f4;
+      padding: 3px 7px;
+      border-radius: 0 5px 5px 0;
+      border: 1.3px solid #394A60;
+      box-shadow: -5px 0px rgba(0, 0, 0, 0), -7px 0px #394A60; }
+
+.home {
+  width: 70%;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border: 2px dashed white;
+  transition: 1s ease-in-out; }
+  .home.border {
+    border: 2px solid #4579D4;
+    box-shadow: 12px 12px #394A60;
+    animation: blueToPurple 1s ease-in-out 2s forwards, bouncing 1.5s ease-in-out 1s infinite alternate; }
+  .home.expand {
+    border: 2px solid #D62CC2;
+    animation: expand 2s ease-in-out forwards; }
+  .home.shrink {
+    border: 2px solid #D62CC2;
+    animation: shrink 2s ease-in-out forwards; }
+</style><script charset="utf-8" src="./yangha_kim_files/main.fe3591a08e4f5a30b4b6.hot-update.js"></script><script charset="utf-8" src="http://localhost:3000/main.96a2fa74d98eb44a6691.hot-update.js"></script></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="container"><div class="container__greeting"><img src="./yangha_kim_files/birdpurp.e3fccbd5.png" alt="yangha kim" width="50" height="50"><p class="container__greeting-text">Yangha Kim<br>Based in Philly</p></div><div class="home border expand"><div class="projects grow"><div class="projects__items grow"><div class="projects__items__item one"><p class="projects__items__item-header">july 2019 | best project</p><p class="projects__items__item-title">intercessor.web</p><p class="projects__items__item-desc">a WEB app for SHARING PRAYER REQUESTS</p></div><div class="projects__items__item two"><p class="projects__items__item-header">current</p><p class="projects__items__item-title">intercessor.mobile</p><p class="projects__items__item-desc">a MOBILE app for SHARING PRAYER REQUESTS</p></div><div class="projects__items__item three"><p class="projects__items__item-header">july 2019 | landing page</p><p class="projects__items__item-title">intercessor.landing</p><p class="projects__items__item-desc">a WEB app serving as a LANDING PAGE for Intercessor (app).</p></div><div class="projects__items__item four"><p class="projects__items__item-header">april 2019 | reference point</p><p class="projects__items__item-title">4 spiritual laws</p><p class="projects__items__item-desc">a WEB site navigating through the 4 spiritual laws</p></div></div><div class="projects__desc"><div class="project"><div class="project__back"><p class="project__back-text">back</p></div><div class="project__top"><div class="project__links"><a href="https://intercessor-web.herokuapp.com/" target="_blank" rel="noopener noreferrer">site </a><a>|</a><a href="https://github.com/yanghakim/intercessor" target="_blank" rel="noopener noreferrer"> code</a></div><p class="project__header">INTERCESSOR:</p><div class="project__to"><button class="project__to-learned">learned</button><button class="project__to-why">why</button><button class="project__to-guide">guide</button><button class="project__to-software">tech</button></div><p class="project__subheader">an environment to send and view prayer requests.</p></div><div class="project__learned"><p class="project__learned-header">WHAT I LEARNED [may 2019 - july 2019]:</p><div class="project__learned-body"><div class="project__learned-1"><p class="project__learned-1-header">[I]: Create React App</p><p class="project__learned-1-body">- after 2 weeks of learning Javascript, I started my first react app<br>- learned about the utility of components and the virtual DOM<br>- adopted SASS as a CSS extension<br><span class="sm-indent">- learned and utilized sass variables and mixins</span></p></div><div class="project__learned-2"><p class="project__learned-2-header">[II]: Server Side Foundation</p><p class="project__learned-2-body">- restructuring project to accomodate for server (Node.JS) and client (Javascript) side code<br>- installed and configured Express for route handling<br>- setup MongoDB<br>- installed and configured Mongoose for creating models and querying<br>- setup dynamic listening to PORTS (for DEV and PROD)<br>- installed and configured Passport for authentication<br></p></div><div class="project__learned-3"><p class="project__learned-3-header">[III]: Routing</p><p class="project__learned-3-body">- handle routes with async/await<br>- CRUD practices<br>- structuring route files for each collection<br>- installed Mongoose for creating models and querying<br>- setup dynamic listening to PORTS (for DEV and PROD)<br><span>- routes: login, filter prayers, group members, leave group, and many more</span></p></div><div class="project__learned-4"><p class="project__learned-4-header">[IV]: Redux</p><p class="project__learned-4-body">- configure and connect Redux store with components, mapping state to props<br>- setup actions, action creators, and reducers<br>- redux thunk used for "functional" action creators<br>- redux persist used for locally storing states<br><span>- states: user data, user's groups, user's favorite groups</span></p></div><div class="project__learned-4"><p class="project__learned-4-header">[V]: QOL Practices</p><p class="project__learned-4-body">- component architecture: breaking down UI by components <span>(login vs register)</span><br>- project architecture: grouping files by functionality <span>(routes vs models)</span> and type <span>(sass vs jsx)</span><br>- naming conventions: BEM class naming<br>- routing architecture: breaking up big routes into middlewares</p></div></div></div><div class="project__why"><p class="project__why-header">Q: WHY IS THIS FEATURED ON MY PORTFOLIO:</p><div class="project__why-body"><div class="project__why-1"><p class="project__why-1-body">A: This is definitely the most impressive thing I've made that I can <span>visibly</span> showcase to the world. I use the word <span>visibly</span> because I think most of the work I take pride in is internal work - the laying down of the foundation to a, hopefully, noble and praiseworthy future.<br><br>Three years back, when I was a Computer Science student, I entertained the idea of creating a mobile prayer sharing app. I had already been experimenting with <span>Android Studio, Material UI, and Facebook's Parse (a MBaaS)</span>. When development and learning seemed to be at their peak, Facebook announced that it'd be discontinuing Parse's services, which was pretty devastating for me. At that time, I'd also been really considering pursuing a service career. These two events sparked my transition into pre-medicine.<br><br>Since then, my discernment of this desire to serve became more acute. Eventually it lead me to psychology, and my acute, global, and holistic awareness of people's loves evidenced itself to be quite unique. Since then, my longing to serve has been taking on a more concrete shape. More self-aware, I now don't feel the need to rely on a career path to elucidate these desires. More and more, I find myself able to satiate these longings with and through serving the people close to me.<br><br>My return to coding started at the very tail end of April 2019 when I'd moved back to Philadelphia to learn how to live as a young adult apart from my parents. This project is a testament to all the soul-searching I painfully partook in for the sake of my future self. I'm learning faster than I've ever before and my eye for good design is better than I've ever remembered. I've learned how to create a full-stack application within two months and find myself designing good and coherent design in a single sitting.<br><br>This project is a testament not just to my ability to code and learn. More importantly to me, it's a testament of my sanity as visionary-type processor.</p></div></div></div><div class="project__body"><div class="project__guide"><p class="project__guide-header">GUIDEBOOK:</p><div class="project__guide-0"><p class="project__guide-0-header">[join] create an account</p><p class="project__guide-0-body">[1] provide email and password<br>[2] use Google authentication with Gmail accounts<br>[3] share your user acronym with others<br></p></div><div class="project__guide-1"><p class="project__guide-1-header">[menu] pick your weapon:</p><p class="project__guide-1-body">[a] view others' prayer requests<br>[b] enter a prayer environment<br>[c] send a prayer request</p></div><div class="project__guide-2"><p class="project__guide-2-header">[a] view others' prayer requests:</p><p class="project__guide-2-body">[1] selah<br>[2] prayer feed<br>[3] prayer detail<br><span>[4] sanctuary</span></p><p class="project__guide-2-header">[b] enter a prayer environment:</p><p class="project__guide-2-body"><span>[1] sanctuary</span></p><p class="project__guide-2-header">[c] send a prayer request:</p><p class="project__guide-2-body">[1] selah<br>[2] prayer request form<br><span>[3] sanctuary</span></p></div><div class="project__guide-3"><p class="project__guide-3-header">[end] sanctuary:</p><p class="project__guide-3-body">[1] set timer OR let the Spirit lead<br>[2] set prayer topic OR let the Spirit lead<br><span>[3] pray</span></p></div><div class="project__guide-4"><p class="project__guide-4-header">[share] to groups and personally:</p><p class="project__guide-4-body">[1] create/join groups (found in settings)<br>[2] share your user acronym with others<br>[3] share your group acronym with others<br></p></div></div><div class="project__tech"><p class="project__tech-header">SOFTWARE INFRASTRUCTURE:</p><div class="project__tech-1"><p class="project__tech-1-header">[front-end] Javascript:</p><p class="project__tech-1-body">[React.JS] component based app<br><span class="indent">[React Router] navigating through components<br></span><br>[Redux] state management<br><span class="indent">[Redux Thunk] "functional" action creators<br></span><span class="indent">[Redux Persist] persists store using local storage<br></span><br>[Axios] make http reqs from Node.js<br><br>[Bcrypt] encrypt user passwords<br><br>[Sass] css extension</p></div><div class="project__tech-2"><p class="project__tech-2-header">[back-end] Node.js:</p><p class="project__tech-2-body">[Express] web framework -&gt; route handlers<br><br>[MongoDB] noSQL database<br><span class="indent">[Mongoose] create mongoDB models and querying<br></span><br>[Passport] login and register authentication<br><span class="indent">[Google OAuth] Google authentication<br></span><br>[Cookie-Session] stores session data locally on browser</p></div></div></div></div></div></div></div><div class="sidebar"><div class="sidebar__colors"><p class="sidebar__colors-title">color code</p><p class="sidebar__colors-blue">blue: neutral</p><p class="sidebar__colors-purple">purple: important</p><p class="sidebar__colors-green">green: tech-related</p></div><p class="sidebar__page">yanghakim/projects/Intercessor (web)</p></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./yangha_kim_files/bundle.js"></script><script src="./yangha_kim_files/0.chunk.js"></script><script src="./yangha_kim_files/main.chunk.js"></script><script src="./yangha_kim_files/main.6522a1bfd8e385d20c4f.hot-update.js"></script>
+
+</body></html>

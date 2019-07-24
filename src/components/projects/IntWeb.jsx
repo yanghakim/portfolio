@@ -34,16 +34,27 @@ class IntWeb extends Component {
           </div>
           <p className="project__header">INTERCESSOR:</p>
           <div className="project__to">
-            <button className="project__to-learned">learned</button>
-            <button className="project__to-why">why</button>
-            <button className="project__to-guide">guide</button>
-            <button className="project__to-software">tech</button>
+            <a className="project__to-learned" href="#learned">
+              learned
+            </a>
+            <a className="project__to-colors" href="#colors">
+              colors
+            </a>
+            <a className="project__to-guide" href="#guide">
+              guide
+            </a>
+            <a className="project__to-software" href="#software">
+              tech
+            </a>
+            <a className="project__to-why" href="#why">
+              why
+            </a>
           </div>
           <p className="project__subheader">
             an environment to send and view prayer requests.
           </p>
         </div>
-        <div className="project__learned">
+        <div className="project__learned" id="learned">
           <p className="project__learned-header">
             WHAT I LEARNED [may 2019 - july 2019]:
           </p>
@@ -136,63 +147,39 @@ class IntWeb extends Component {
             </div>
           </div>
         </div>
-        <div className="project__why">
-          <p className="project__why-header">
-            Q: WHY IS THIS FEATURED ON MY PORTFOLIO:
-          </p>
-          <div className="project__why-body">
-            <div className="project__why-1">
-              <p className="project__why-1-body">
-                A: This is definitely the most impressive thing I've made that I
-                can <span>visibly</span> showcase to the world. I use the word{" "}
-                <span>visibly</span> because I think most of the work I take
-                pride in is internal work - the laying down of the foundation to
-                a, hopefully, noble and praiseworthy future.
-                <br />
-                <br />
-                Three years back, when I was a Computer Science student, I
-                entertained the idea of creating a mobile prayer sharing app. I
-                had already been experimenting with{" "}
-                <span>
-                  Android Studio, Material UI, and Facebook's Parse (a MBaaS)
-                </span>
-                . When development and learning seemed to be at their peak,
-                Facebook announced that it'd be discontinuing Parse's services,
-                which was pretty devastating for me. At that time, I'd also been
-                really considering pursuing a service career. These two events
-                sparked my transition into pre-medicine.
-                <br />
-                <br />
-                Since then, my discernment of this desire to serve became more
-                acute. Eventually it lead me to psychology, and my acute,
-                global, and holistic awareness of people's loves evidenced
-                itself to be quite unique. Since then, my longing to serve has
-                been taking on a more concrete shape. More self-aware, I now
-                don't feel the need to rely on a career path to elucidate these
-                desires. More and more, I find myself able to satiate these
-                longings with and through serving the people close to me.
-                <br />
-                <br />
-                My return to coding started at the very tail end of April 2019
-                when I'd moved back to Philadelphia to learn how to live as a
-                young adult apart from my parents. This project is a testament
-                to all the soul-searching I painfully partook in for the sake of
-                my future self. I'm learning faster than I've ever before and my
-                eye for good design is better than I've ever remembered. I've
-                learned how to create a full-stack application within two months
-                and find myself designing good and coherent design in a single
-                sitting.
-                <br />
-                <br />
-                This project is a testament not just to my ability to code and
-                learn. More importantly to me, it's a testament of my sanity as
-                visionary-type processor.
-              </p>
-            </div>
+
+        <div className="project__design" id="design">
+          <p className="project__design-header">COLOR CHOICES:</p>
+          <div className="project__design-body">
+            <p className="project__design-body-colorshadow">
+              dark theme: Creates a rather serious atmosphere to contrast with
+              the fiery passion invoked by the landing page. This duality
+              creates a more holistic experience reflecting the passion of
+              Christ and our humble, serious, and hopeful response to it.
+            </p>
+            <p className="project__design-body-colorpurple">
+              purple: Alludes to our royal priesthood as believers of Christ, as
+              purple is often associated with royalty. As we intercede for one
+              another, we remember what Christ has done for us so that we could
+              join together in fighting our spiritual battles.
+            </p>
+            <p className="project__design-body-colorblue">
+              blue/green: Alludes to our freedom in Christ, as blue/green is
+              often associated with serenity. As we enter into a time of prayer,
+              we remember what Christ has done for us so that we could find
+              inner peace in our hearts, minds, and souls.
+            </p>
+            <p className="project__design-body-colorred">
+              red: Alludes to the veil that was torn because of the blood that
+              was shed, as red is often associated with blood and sacrifice. As
+              we seek help, we remember what Christ has done for us so that we
+              could enter the Most Holy Place.
+            </p>
           </div>
         </div>
+
         <div className="project__body">
-          <div className="project__guide">
+          <div className="project__guide" id="guide">
             <p className="project__guide-header">GUIDEBOOK:</p>
             <div className="project__guide-0">
               <p className="project__guide-0-header">
@@ -275,7 +262,7 @@ class IntWeb extends Component {
               </p>
             </div>
           </div>
-          <div className="project__tech">
+          <div className="project__tech" id="software">
             <p className="project__tech-header">SOFTWARE INFRASTRUCTURE:</p>
             <div className="project__tech-1">
               <p className="project__tech-1-header">[front-end] Javascript:</p>
@@ -328,6 +315,62 @@ class IntWeb extends Component {
                 </span>
                 <br />
                 [Cookie-Session] stores session data locally on browser
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="project__why" id="why">
+          <p className="project__why-header">
+            Q: WHY IS THIS FEATURED ON MY PORTFOLIO:
+          </p>
+          <div className="project__why-body">
+            <div className="project__why-1">
+              <p className="project__why-1-body">
+                A: This is definitely the most impressive thing I've made that I
+                can <span>visibly</span> showcase to the world. I use the word{" "}
+                <span>visibly</span> because I think most of the work I take
+                pride in is internal work - the laying down of the foundation to
+                a, hopefully, noble and praiseworthy future.
+                <br />
+                <br />
+                Three years back, when I was a Computer Science student, I
+                entertained the idea of creating a mobile prayer sharing app. I
+                had already been experimenting with{" "}
+                <span>
+                  Android Studio, Material UI, and Facebook's Parse (a MBaaS)
+                </span>
+                . When development and learning seemed to be at their peak,
+                Facebook announced that it'd be discontinuing Parse's services,
+                which was pretty devastating for me. At that time, I'd also been
+                really considering pursuing a service career. These two events
+                sparked my transition into pre-medicine.
+                <br />
+                <br />
+                Since then, my discernment of this desire to serve became more
+                acute. Eventually it lead me to psychology, and my acute,
+                global, and holistic awareness of people's loves evidenced
+                itself to be quite unique. Since then, my longing to serve has
+                been taking on a more concrete shape. More self-aware, I now
+                don't feel the need to rely on a career path to elucidate these
+                desires. More and more, I find myself able to satiate these
+                longings with and through serving the people close to me.
+                <br />
+                <br />
+                My return to coding started at the very tail end of April 2019
+                when I'd moved back to Philadelphia to learn how to live as a
+                young adult apart from my parents. This project is a testament
+                to all the soul-searching I painfully partook in for the sake of
+                my future self. I'm learning faster than I've ever before and my
+                eye for good design is better than I've ever remembered. I've
+                learned how to create a full-stack application within two months
+                and find myself designing good and coherent design in a single
+                sitting.
+                <br />
+                <br />
+                I'm grateful to live in a world where information is so
+                accessible and skills like coding can be learned just with an
+                internet connection. I want to keep working hard and develop
+                some cool applications with some cool people.
               </p>
             </div>
           </div>

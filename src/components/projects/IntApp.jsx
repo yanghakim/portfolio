@@ -18,15 +18,21 @@ class IntApp extends Component {
           </div>
           <p className="project__header">INTERCESSOR (mobile app):</p>
           <div className="project__to">
-            <button className="project__to-learned">todo</button>
-            <button className="project__to-guide">guide</button>
-            <button className="project__to-software">tech</button>
+            <a className="project__to-learned" href="#learned">
+              todo
+            </a>
+            <a className="project__to-guide" href="#guide">
+              guide
+            </a>
+            <a className="project__to-software" href="#software">
+              tech
+            </a>
           </div>
           <p className="project__subheader">
             an environment to send and view prayer requests.
           </p>
         </div>
-        <div className="project__learned">
+        <div className="project__learned" id="learned">
           <p className="project__learned-header">WHAT I ANTICIPATE LEARNING:</p>
           <div className="project__learned-body">
             <div className="project__learned-1">
@@ -48,13 +54,13 @@ class IntApp extends Component {
           </div>
         </div>
         <div className="project__body">
-          <div className="project__guide">
+          <div className="project__guide" id="guide">
             <p className="project__guide-header">GUIDEBOOK:</p>
             <div className="project__guide-1">
               <p className="project__guide-1-header">see INTERCESSOR.web:</p>
             </div>
           </div>
-          <div className="project__tech">
+          <div className="project__tech" id="software">
             <p className="project__tech-header">SOFTWARE INFRASTRUCTURE:</p>
             <div className="project__tech-1">
               <p className="project__tech-1-header">tbd</p>

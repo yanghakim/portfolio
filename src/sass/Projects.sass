@@ -13,9 +13,16 @@
   transition: 1s ease-in-out
   animation: fadeIn 2s ease-in-out forwards
 
+  @media (max-width: 900px)
+    grid-template-columns: 1fr
+    grid-template-rows: 2.5fr 3fr
+
   &.grow
     grid-template-columns: 0 3fr
     animation: fadeOut 1s ease-in-out forwards
+
+    @media (max-width: 900px)
+      grid-template-rows: 3fr
 
   &.shrink
     grid-template-columns: 1 3fr
@@ -28,6 +35,15 @@
     border-right: 2px dashed $purple
 
     overflow-y: scroll
+
+    @media (max-width: 900px)
+      grid-template-rows: 1fr 1fr
+      grid-template-columns: repeat(2, 1fr)
+
+      border-right: none
+      border-bottom: 2px solid $accent
+
+      background-color: lighten($purple, 46%)
 
     &.grow
       border-right: none
@@ -64,11 +80,18 @@
       &.one
         animation: fadeIn 1s ease 0.5s forwards
 
+        @media (max-width: 900px)
+          border-right: 2px dashed $purple
+
       &.two
         animation: fadeIn 1s ease 1s forwards
 
       &.three
         animation: fadeIn 1s ease 1.5s forwards
+
+        @media (max-width: 900px)
+          border-bottom: none
+          border-right: 2px dashed $purple
 
       &.four
         animation: fadeIn 1s ease 2s forwards
@@ -101,6 +124,9 @@
       width: 1em
       background-color: none
       border-left: 2px dashed $purple
+
+      @media (max-width: 900px)
+        width: 0.5em
 
     &::-webkit-scrollbar-thumb
       background-color: $purple

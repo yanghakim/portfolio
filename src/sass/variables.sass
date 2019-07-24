@@ -71,3 +71,40 @@ $purple-1: darken($purple, 10%)
   100%
     width: 70%
     height: 70vh
+
+@mixin navlinks
+  background: none
+  border: 2px solid $purple
+  outline: none
+
+  padding: 0
+  font-family: 'Space Mono', monospace
+  font-size: 0.7em
+  color: $purple
+  text-align: center
+  text-decoration: none
+
+  transition: 0.5s ease-in-out
+
+  &:hover
+    color: white
+    background-color: $purple
+
+
+@mixin sidebar($color)
+  color: $color
+  font-family: "Space Mono", monospace
+  padding-left: 7px
+
+  box-shadow: -5px 0px rgba(0, 0, 0, 0), -7px 0px $color
+
+@mixin colors($color)
+  color: $color
+  font-family: "Space Mono", monospace
+
+  background-color: rgba(244,244,244,0.8)
+  padding: 3px 30px 3px 7px
+  border-radius: 0 5px 5px 0
+  border: 1.3px solid $color
+
+  box-shadow: -5px 0px rgba(0, 0, 0, 0), -7px 0px $color

@@ -76,30 +76,34 @@ class FourSL extends Component {
             </div>
           </div>
         </div>
-        <div className="project__why">
-          <p className="project__why-header">
-            Q: WHY IS THIS FEATURED ON MY PORTFOLIO:
-          </p>
-          <div className="project__why-body">
-            <div className="project__why-1">
-              <p className="project__why-1-body">
-                A: This is definitely not the most impressive thing I've made -
-                but it was quite awe-strucking during development. I think a few
-                days after deciding to studying coding again, I quickly went to
-                work at designing a website. Though I had not touched any code
-                since 2016, a lot of concepts, old and new, came quickly to me.
-                <br />
-                <br />I remember being thoroughly entertained and impressed by
-                the final result of this mini-project. Within a week, I brushed
-                up on HTML and CSS, learned Javascript and deployed the site via
-                Netlify. This project is mainly a reference point to compare my
-                current work with. Within 2 months, I'd be done designing and
-                programming a full-stack application using React, Node.JS,
-                Redux, Express, MongoDB, etc.
-              </p>
-            </div>
+
+        <div className="project__design" id="design">
+          <p className="project__design-header">COLOR CHOICES:</p>
+          <div className="project__design-body">
+            <p className="project__design-body-colorgreen">
+              green: Symbolizes life and flourishing, as the first spiritual law
+              is that God loves you and offers a wonderful plan for your life.
+            </p>
+            <p className="project__design-body-colorshadow">
+              black: Symbolizes darkness and despair, as the second spiritual
+              law is that man is sinful and separated from God. Therefore, he
+              cannot know and experience God's love and plan for his life.
+            </p>
+            <p className="project__design-body-colorred">
+              red: Symbolizes passion, blood, and sacrifice, as the third
+              spiritual law is that Jesus Christ is God's only provision for
+              man's sin. Through Him you can know and experience God's love and
+              plan for your life.
+            </p>
+            <p className="project__design-body-coloryellow">
+              gold: Symbolizes hope and prosperity, as the fourth spiritual law
+              is that we must individually receive Jesus Christ as Savior and
+              Lord; then we can know and experience God's love and plan for our
+              lives.
+            </p>
           </div>
         </div>
+
         <div className="project__body">
           <div className="project__guide">
             <p className="project__guide-header">GUIDEBOOK:</p>
@@ -124,6 +128,30 @@ class FourSL extends Component {
                 [HTML]
                 <br />
                 [CSS]
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="project__why">
+          <p className="project__why-header">
+            Q: WHY IS THIS FEATURED ON MY PORTFOLIO:
+          </p>
+          <div className="project__why-body">
+            <div className="project__why-1">
+              <p className="project__why-1-body">
+                A: This is definitely not the most impressive thing I've made -
+                but it was quite awe-strucking during development. I think a few
+                days after deciding to studying coding again, I quickly went to
+                work at designing a website. Though I had not touched any code
+                since 2016, a lot of concepts, old and new, came quickly to me.
+                <br />
+                <br />I remember being thoroughly entertained and impressed by
+                the final result of this mini-project. Within a week, I brushed
+                up on HTML and CSS, learned Javascript and deployed the site via
+                Netlify. This project is mainly a reference point to compare my
+                current work with. Within 2 months, I'd be done designing and
+                programming a full-stack application using React, Node.JS,
+                Redux, Express, MongoDB, etc.
               </p>
             </div>
           </div>

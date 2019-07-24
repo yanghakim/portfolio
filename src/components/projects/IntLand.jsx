@@ -33,15 +33,24 @@ class IntLand extends Component {
           </div>
           <p className="project__header">INTERCESSOR (landing page):</p>
           <div className="project__to">
-            <button className="project__to-learned">todo</button>
-            <button className="project__to-guide">guide</button>
-            <button className="project__to-software">tech</button>
+            <a className="project__to-learned" href="#learned">
+              todo
+            </a>
+            <a className="project__to-colors" href="#design">
+              design
+            </a>
+            <a className="project__to-guide" href="#guide">
+              guide
+            </a>
+            <a className="project__to-software" href="#software">
+              tech
+            </a>
           </div>
           <p className="project__subheader">
             an environment to send and view prayer requests.
           </p>
         </div>
-        <div className="project__learned">
+        <div className="project__learned" id="learned">
           <p className="project__learned-header">WHAT I LEARNED:</p>
           <div className="project__learned-body">
             <div className="project__learned-1">
@@ -50,8 +59,8 @@ class IntLand extends Component {
               </p>
               <p className="project__learned-1-body">
                 - considering various different design choices, I came to value
-                simplicity and readability above all else, especially creating
-                many features
+                simplicity and readability above all else, especially above
+                creating many features
                 <br />- a visitor should be able to quickly read through a
                 landing page and also digest the content easily
                 <br />- better coding practices, such as BEM naming and
@@ -60,8 +69,18 @@ class IntLand extends Component {
             </div>
           </div>
         </div>
+        <div className="project__design" id="design">
+          <p className="project__design-header">COLOR CHOICES:</p>
+          <div className="project__design-body">
+            <p className="project__design-body-colorred">
+              red: Provokes passion and initiative, as red is often associated
+              with energy, courage, and passion. Ties well with the slogan:
+              "Join the Fight!"
+            </p>
+          </div>
+        </div>
         <div className="project__body">
-          <div className="project__guide">
+          <div className="project__guide" id="guide">
             <p className="project__guide-header">GUIDEBOOK:</p>
             <div className="project__guide-1">
               <p className="project__guide-1-header">[A] It's pretty simple</p>
@@ -71,7 +90,7 @@ class IntLand extends Component {
               </p>
             </div>
           </div>
-          <div className="project__tech">
+          <div className="project__tech" id="software">
             <p className="project__tech-header">SOFTWARE INFRASTRUCTURE:</p>
             <div className="project__tech-1">
               <p className="portfolio__tech-1-header">
