@@ -78,7 +78,7 @@ class Home extends Component {
         </div>
         <div className="sidebar">
           <div className="sidebar__colors">
-            <p className="sidebar__colors-title">portfolio color code</p>
+            <p className="sidebar__colors-title">text color code</p>
             <p className="sidebar__colors-blue">blue: neutral</p>
             <p className="sidebar__colors-purple">purple: important</p>
             <p className="sidebar__colors-green">green: tech-related</p>

@@ -79,7 +79,7 @@ class Projects extends Component {
             onClick={() => this.grow(1)}
           >
             <p className="projects__items__item-header">
-              july 2019 | best project
+              july 2019 | featured project
             </p>
             <p className="projects__items__item-title">intercessor.web</p>
             <p className="projects__items__item-desc">

@@ -23,7 +23,7 @@ class IntLand extends Component {
             </a>
             <a>|</a>
             <a
-              href="https://github.com/yanghakim/intercessor-landing"
+              href="https://github.com/yanghakim/intercessor-landingv2"
               target="_blank"
               rel="noopener noreferrer"
             >
