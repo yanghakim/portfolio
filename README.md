@@ -1,5 +1,6 @@
 # portfolio (yanghakim)
-This is my personal portfolio featuring a few selected projects I've designed and coded. 
+
+This is my personal portfolio featuring a few selected projects I've designed and coded.
 
 This is the third iteration of its design. Each iteration came at a different point in my learning process and exhibit very different design choices, coding practices (becoming more DRY code), and varying levels of, sometimes unnecessary, complexity.
 
