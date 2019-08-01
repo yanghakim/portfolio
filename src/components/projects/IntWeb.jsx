@@ -8,13 +8,17 @@ class IntWeb extends Component {
   }
 
   render() {
+    const images = require.context("../../images/intweb", true);
+    const imagePath = name => images(name, true);
+
     return (
       <div className="project">
-        <div className="project__back" onClick={() => this.props.shrink(0)}>
-          <p className="project__back-text">back</p>
-        </div>
-        <div className="project__top">
-          <div className="project__links">
+        <div className="project__nav">
+          <p className="project__nav-back" onClick={() => this.props.shrink(0)}>
+            back
+          </p>
+
+          <div className="project__nav-links">
             <a
               href="https://intercessor-web.herokuapp.com/"
               target="_blank"
@@ -32,28 +36,138 @@ class IntWeb extends Component {
               code
             </a>
           </div>
-          <p className="project__header">INTERCESSOR:</p>
-          <div className="project__to">
-            <a className="project__to-learned" href="#learned">
+        </div>
+        <div className="project__top">
+          <p className="project__top__header">INTERCESSOR:</p>
+          <div className="project__top__to">
+            <a className="project__top__to-learned" href="#learned">
               learned
             </a>
-            <a className="project__to-colors" href="#colors">
+            <a className="project__top__to-colors" href="#colors">
               colors
             </a>
-            <a className="project__to-guide" href="#guide">
+            <a className="project__top__to-guide" href="#guide">
               guide
             </a>
-            <a className="project__to-software" href="#software">
+            <a className="project__top__to-software" href="#software">
               tech
             </a>
-            <a className="project__to-why" href="#why">
+            <a className="project__top__to-why" href="#why">
               why
             </a>
           </div>
-          <p className="project__subheader">
+          <p className="project__top__subheader">
             an environment to send and view prayer requests.
           </p>
         </div>
+
+        <div className="project__images">
+          <figure>
+            <img
+              src={imagePath("./intweb-white.jpg")}
+              alt="intweb-white"
+              className="project__images-item"
+            />
+            <figcaption>Fig.1 - Light Theme - Login Screen.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-login.jpg")}
+              alt="intweb-login"
+              className="project__images-item"
+            />
+            <figcaption>Fig.2 - Dark Theme - Login Screen.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-login2.jpg")}
+              alt="intweb-login2"
+              className="project__images-item"
+            />
+            <figcaption>Fig.3 - Login Form.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-menu.jpg")}
+              alt="intweb-menu"
+              className="project__images-item"
+            />
+            <figcaption>Fig.4 - Menu.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-info.jpg")}
+              alt="intweb-info"
+              className="project__images-item"
+            />
+            <figcaption>Fig.5 - Settings - User Info.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-groups.jpg")}
+              alt="intweb-groups"
+              className="project__images-item"
+            />
+            <figcaption>Fig.6 - Settings - Groups.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-creategrp.jpg")}
+              alt="intweb-creategrp"
+              className="project__images-item"
+            />
+            <figcaption>Fig.7 - Settings - Groups - Create Group.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-detail.jpg")}
+              alt="intweb-detail"
+              className="project__images-item"
+            />
+            <figcaption>Fig.8 - Settings - Groups - Group Detail.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-selah.jpg")}
+              alt="intweb-selah"
+              className="project__images-item"
+            />
+            <figcaption>Fig.9 - Selah.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-feed.jpg")}
+              alt="intweb-feed"
+              className="project__images-item"
+            />
+            <figcaption>Fig.10 - Prayer Feed.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-prayer.jpg")}
+              alt="intweb-prayer"
+              className="project__images-item"
+            />
+            <figcaption>Fig.11 - Prayer Feed - Prayer Detail.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-req.jpg")}
+              alt="intweb-req"
+              className="project__images-item"
+            />
+            <figcaption>Fig.12 - Prayer Request Form.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-csanct.jpg")}
+              alt="intweb-csanct"
+              className="project__images-item"
+            />
+            <figcaption>Fig.13 - Sanctuary.</figcaption>
+          </figure>
+        </div>
+
         <div className="project__learned" id="learned">
           <p className="project__learned-header">
             WHAT I LEARNED [may 2019 - july 2019]:
@@ -148,7 +262,7 @@ class IntWeb extends Component {
           </div>
         </div>
 
-        <div className="project__design" id="design">
+        <div className="project__design" id="colors">
           <p className="project__design-header">COLOR CHOICES:</p>
           <div className="project__design-body">
             <p className="project__design-body-colorshadow">

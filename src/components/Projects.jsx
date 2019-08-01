@@ -74,6 +74,7 @@ class Projects extends Component {
     return (
       <div className={this.state.growContainerAnimationClass}>
         <div className={this.state.growFontAnimationClass}>
+          <p className="projects__items-header">yangha's projects:</p>
           <div
             className="projects__items__item one"
             onClick={() => this.grow(1)}

@@ -9,13 +9,16 @@ class IntApp extends Component {
   render() {
     return (
       <div className="project">
-        <div className="project__back" onClick={() => this.props.shrink(0)}>
-          <p className="project__back-text">back</p>
-        </div>
-        <div className="project__top">
-          <div className="project__links">
+        <div className="project__nav">
+          <p className="project__nav-back" onClick={() => this.props.shrink(0)}>
+            back
+          </p>
+
+          <div className="project__nav-links">
             <a>in progress</a>
           </div>
+        </div>
+        <div className="project__top">
           <p className="project__header">INTERCESSOR (mobile app):</p>
           <div className="project__to">
             <a className="project__to-learned" href="#learned">

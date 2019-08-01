@@ -3,144 +3,155 @@
 .project
   color: $accent
   font-family: 'Space Mono', monospace
-  padding: 0 5% 0 6%
+  padding: 0 5% 0 2%
 
   animation: fadeIn 2s ease-in-out forwards
 
   @media (max-width: 900px)
     font-size: 0.8em
-    padding: 0 5% 0 8%
-
-  @media (max-width: 600px)
-    font-size: 0.8em
-    padding: 0 5% 0 10%
+    padding: 0 5% 0 5%
 
   span
     color: $purple
 
-  &__back
-    position: absolute
-    left: 0
-    top: 0
-
-    width: 30px
-    height: 100%
-
-    border-right: 2px solid $purple
-    border-bottom: 2px solid $purple
-    color: $purple
-
+  &__nav
     display: flex
-    align-items: center
 
-    opacity: 0
+    &-back
+      display: flex
+      flex-direction: row
 
-    animation: fadeIn 2s ease-in-out 2s forwards
-    transition: 0.5s ease-in-out
-    cursor: pointer
+      padding: 5px
+      border-radius: 5px 0 0 5px
+      margin: 0
+      border: 1px solid $shadow
+      background-color: rgba(244,244,244,0.8)
 
-    @media (max-width: 900px)
-      width: 15px
+      color: $shadow
+      cursor: pointer
+      transition: 0.5s ease
 
-    &:hover
-      color: white
-      background-color: $purple
-
-    &-text
-      transform: rotate(-90deg)
-      transform-origin: top 0
-
-      font-family: "Space Mono", monospace
-      letter-spacing: 5px
-      margin-left: -15px
+      &:hover
+        color: $purple
 
       @media (max-width: 900px)
-        margin-left: -19px
+        width: 30px
+
+    &-links
+      display: flex
+      flex-direction: row
+
+      padding: 5px 10px
+      border-radius: 0 5px 5px 0
+      border: 1px solid $shadow
+      background-color: rgba(244,244,244,0.8)
+
+      border-left: 5px solid $shadow
+
+      transition: 0.3s ease
+
+      &:hover
+        background-color: $green
+
+      a
+        color: $shadow
+        text-decoration: none
+
+        transition: 0.3s ease
+
+        &:hover
+          color: white
 
   &__top
     display: grid
     grid-template-columns: 5fr 1fr
 
-  &__links
-    grid-column: 1 / span 2
+    &__header
+      font-size: 1.2em
+      letter-spacing: 3px
 
+    &__subheader
+      opacity: 0.9
+      margin: 0
+
+      grid-column: 1
+
+    &__to
+      grid-row: 1 / span 2
+      grid-column: 2
+      justify-self: end
+      align-self: flex-end
+
+      display: grid
+      grid-template-columns: 1fr 1fr
+
+      height: 90px
+      width: 90px
+
+      @media (max-width: 900px)
+        height: 60px
+        width: 60px
+
+      &-learned
+        @include navlinks
+        grid-column: 1 / span 2
+
+      &-colors
+        @include navlinks
+        grid-column: 1 / span 2
+        border-top: none
+
+      &-why
+        @include navlinks
+        grid-column: 1 / span 2
+        border-top: none
+
+      &-guide
+        @include navlinks
+        border: none
+        border-left: 2px solid $purple
+        border-bottom: 2px solid $purple
+
+        @media (max-width: 900px)
+          grid-column: 1 / span 2
+          border-right: 2px solid $purple
+
+      &-software
+        @include navlinks
+        border: none
+        border-right: 2px solid $purple
+        border-left: 2px solid $purple
+        border-bottom: 2px solid $purple
+
+        @media (max-width: 900px)
+          grid-column: 1 / span 2
+
+  &__images
     display: flex
     flex-direction: row
 
-    padding: 5px
-    border-radius: 0 5px 5px 0
-    width: 90px
-    border: 1px solid $shadow
-    background-color: rgba(244,244,244,0.8)
+    width: 100%
 
-    border-left: 5px solid $shadow
+    margin: 30px 0
+    padding: 30px
 
-    a
-      color: $shadow
-      text-decoration: none
+    border-top: 2px dashed $accent
 
-      transition: 0.3s ease
+    overflow-x: scroll
 
-      &:hover
-        color: $green
+    &::-webkit-scrollbar
+      background-color: none
+      border: 2px dashed $purple
 
-  &__header
-    font-size: 1.2em
-    letter-spacing: 3px
+    &::-webkit-scrollbar-thumb
+      border: 2px dashed $purple
+      background-color: lighten($purple, 40%)
 
-  &__subheader
-    opacity: 0.9
-    margin: 0
+    figure
+      margin-right: 20px
 
-  &__to
-    grid-row: 2 / span 2
-    grid-column: 2
-    justify-self: end
-    align-self: flex-end
-
-    display: grid
-    grid-template-columns: 1fr 1fr
-
-    height: 90px
-    width: 90px
-
-    @media (max-width: 900px)
-      height: 60px
-      width: 60px
-
-    &-learned
-      @include navlinks
-      grid-column: 1 / span 2
-
-    &-colors
-      @include navlinks
-      grid-column: 1 / span 2
-      border-top: none
-
-    &-why
-      @include navlinks
-      grid-column: 1 / span 2
-      border-top: none
-
-    &-guide
-      @include navlinks
-      border: none
-      border-left: 2px solid $purple
-      border-bottom: 2px solid $purple
-
-      @media (max-width: 900px)
-        grid-column: 1 / span 2
-        border-right: 2px solid $purple
-
-    &-software
-      @include navlinks
-      border: none
-      border-right: 2px solid $purple
-      border-left: 2px solid $purple
-      border-bottom: 2px solid $purple
-
-      @media (max-width: 900px)
-        grid-column: 1 / span 2
+    &-item
+      width: 30vw
 
   &__learned
     margin: 30px 0
