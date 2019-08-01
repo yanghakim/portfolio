@@ -5,6 +5,7 @@ import "../../sass/Project.sass";
 class IntApp extends Component {
   componentDidMount() {
     this.props.setPage("yanghakim/projects/Intercessor (mobile)");
+    this.props.setHeader("MOBILE APP:");
   }
   render() {
     return (

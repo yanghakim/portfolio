@@ -6,12 +6,15 @@
   height: 100%
 
   display: grid
-  grid-template-columns: 1fr 4fr
+  grid-template-columns: 1fr 3fr
 
   background-color: white
 
   transition: 1s ease-in-out
   animation: fadeIn 2s ease-in-out forwards
+
+  @media (max-width: 1200px)
+    grid-template-columns: 1fr 2fr
 
   @media (max-width: 900px)
     grid-template-columns: 1fr
@@ -31,6 +34,7 @@
   &__items
     display: grid
     grid-template-rows: repeat(4, 1fr)
+    grid-template-columns: 0.01fr 1fr
 
     border-right: 2px dashed $purple
 
@@ -60,28 +64,43 @@
       background-color: lighten($purple, 40%)
 
     &-header
-      position: absolute
-      top: -49px
+      grid-row: 1 / span 5
+      grid-column: 1
 
-      color: $accent
-      font-family: "Space Mono", monospace
-      font-size: 1.4em
+      writing-mode: vertical-rl
+      text-orientation: upright
+      color: $purple
+      font-family: "Bungee Shade", cursive
+      font-size: 3em
       letter-spacing: 2px
       font-weight: 100
 
-      margin-left: 5px
+      border-right: 2px solid $purple
+
+      background-color: lighten($purple, 40%)
+
+      margin: 0
 
       z-index: 3
 
-      animation: blueToPurplePulse 2s ease-in-out infinite alternate
+      @media (max-width: 900px)
+        grid-row: 1
+        grid-column: 1 / span 2
+
+        writing-mode: horizontal-tb
+
+        padding-left: 10px
+
+        border-bottom: 2px solid $purple
 
     &__item
       color: $accent
       font-family: "Space Mono", monospace
-      font-size: 0.8em
+      font-size: 1em
+
 
       border-bottom: 2px dashed $purple
-      padding: 5%
+      padding: 3% 5%
 
       opacity: 0
 
@@ -90,10 +109,29 @@
       transition: 0.5s ease
       cursor: pointer
 
+      @media (max-width: 900px)
+        height: 200px
+
       &:hover
         background-color: lighten($purple, 40%)
 
         color: $accent
+
+      &-header
+        color: $purple
+        font-weight: 900
+
+      &-title
+        font-size: 1.5em
+
+        margin: -5px 0
+        padding-bottom: 10px
+        border-bottom: 2px dashed $purple
+
+      &-desc
+        margin: 20px 0 0 0
+        font-size: 1em
+
 
       &.one
         animation: fadeIn 1s ease 0.5s forwards
@@ -114,17 +152,6 @@
       &.four
         animation: fadeIn 1s ease 2s forwards
         border-bottom: none
-
-      &-title
-        font-size: 1.5em
-
-        margin: -5px 0
-        padding-bottom: 10px
-        border-bottom: 2px dashed $purple
-
-      &-desc
-        margin: 20px 0 0 0
-        font-size: 1.1em
 
   &__desc
     font-family: "Space Mono", monospace

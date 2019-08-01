@@ -5,6 +5,7 @@ import "../../sass/Project.sass";
 class FourSL extends Component {
   componentDidMount() {
     this.props.setPage("yanghakim/projects/Four Spiritual Laws");
+    this.props.setHeader("FOUR SPIRITUAL LAWS:");
   }
 
   render() {
@@ -51,6 +52,7 @@ class FourSL extends Component {
         </div>
 
         <div className="project__images">
+          <p className="project__images-header">PREVIEWS:</p>{" "}
           <figure>
             <img
               src={imagePath("./home.jpg")}

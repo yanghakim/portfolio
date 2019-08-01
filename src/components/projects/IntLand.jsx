@@ -5,8 +5,12 @@ import "../../sass/Project.sass";
 class IntLand extends Component {
   componentDidMount() {
     this.props.setPage("yanghakim/projects/Intercessor (landing page)");
+    this.props.setHeader("LANDING PAGE:");
   }
   render() {
+    const images = require.context("../../images/intland", true);
+    const imagePath = name => images(name, true);
+
     return (
       <div className="project">
         <div className="project__nav">
@@ -34,24 +38,72 @@ class IntLand extends Component {
           </div>
         </div>
         <div className="project__top">
-          <p className="project__header">INTERCESSOR (landing page):</p>
-          <div className="project__to">
-            <a className="project__to-learned" href="#learned">
+          <p className="project__top__header">INTERCESSOR (landing page):</p>
+          <div className="project__top__to">
+            <a className="project__top__to-learned" href="#learned">
               todo
             </a>
-            <a className="project__to-colors" href="#design">
+            <a className="project__top__to-colors" href="#design">
               design
             </a>
-            <a className="project__to-guide" href="#guide">
+            <a className="project__top__to-guide" href="#guide">
               guide
             </a>
-            <a className="project__to-software" href="#software">
+            <a className="project__top__to-software" href="#software">
               tech
             </a>
           </div>
-          <p className="project__subheader">
+          <p className="project__top__subheader">
             an environment to send and view prayer requests.
           </p>
+        </div>
+
+        <div className="project__images">
+          <p className="project__images-header">PREVIEWS:</p>
+          <figure>
+            <img
+              src={imagePath("./one.jpg")}
+              alt="header"
+              className="project__images-item"
+            />
+            <figcaption>Fig.1 - Header.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePath("./two.jpg")}
+              alt="how it works"
+              className="project__images-item"
+            />
+            <figcaption>Fig.2 - How it works.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePath("./three.jpg")}
+              alt="how it works pt 2"
+              className="project__images-item"
+            />
+            <figcaption>Fig.3 - How it works (cont).</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePath("./four.jpg")}
+              alt="Design"
+              className="project__images-item"
+            />
+            <figcaption>Fig.4 - Design.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePath("./five.jpg")}
+              alt="Footer"
+              className="project__images-item"
+            />
+            <figcaption>Fig.5 - Footer.</figcaption>
+          </figure>
         </div>
         <div className="project__learned" id="learned">
           <p className="project__learned-header">WHAT I LEARNED:</p>

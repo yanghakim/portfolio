@@ -5,11 +5,15 @@ import "../../sass/Project.sass";
 class IntWeb extends Component {
   componentDidMount() {
     this.props.setPage("yanghakim/projects/Intercessor (web)");
+    this.props.setHeader("INTERCESSOR:");
   }
 
   render() {
     const images = require.context("../../images/intweb", true);
     const imagePath = name => images(name, true);
+
+    const imagesRev = require.context("../../images/intrev", true);
+    const imagePathRev = name => imagesRev(name, true);
 
     return (
       <div className="project">
@@ -28,7 +32,7 @@ class IntWeb extends Component {
             </a>
             <a>|</a>
             <a
-              href="https://github.com/yanghakim/intercessor"
+              href="https://github.com/yanghakim/intercessor-v2"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -62,6 +66,7 @@ class IntWeb extends Component {
         </div>
 
         <div className="project__images">
+          <p className="project__images-header">PREVIEWS:</p>
           <figure>
             <img
               src={imagePath("./intweb-white.jpg")}
@@ -165,6 +170,98 @@ class IntWeb extends Component {
               className="project__images-item"
             />
             <figcaption>Fig.13 - Sanctuary.</figcaption>
+          </figure>
+        </div>
+
+        <div className="project__images">
+          <p className="project__images-header">POTENTIAL REDESIGN:</p>
+          <figure>
+            <img
+              src={imagePathRev("./greeting.gif")}
+              alt="greetings"
+              className="project__images-item"
+            />
+            <figcaption>Fig.1 - Greetings Screen.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePathRev("./login.jpg")}
+              alt="login"
+              className="project__images-item"
+            />
+            <figcaption>Fig.2 - Login Screen.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePathRev("./menu.jpg")}
+              alt="menu"
+              className="project__images-item"
+            />
+            <figcaption>Fig.3 - Menu Screen.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePathRev("./settings.jpg")}
+              alt="settings"
+              className="project__images-item"
+            />
+            <figcaption>Fig.4 - Settings Screen.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePathRev("./info.jpg")}
+              alt="info"
+              className="project__images-item"
+            />
+            <figcaption>Fig.5 - Settings - User Info.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePathRev("./groups.jpg")}
+              alt="groups"
+              className="project__images-item"
+            />
+            <figcaption>Fig.6 - Settings - Groups.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePathRev("./timer.jpg")}
+              alt="timer"
+              className="project__images-item"
+            />
+            <figcaption>Fig.7 - Settings - Timers.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePathRev("./selah.jpg")}
+              alt="selah"
+              className="project__images-item"
+            />
+            <figcaption>Fig.8 - Selah.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePathRev("./feed.jpg")}
+              alt="feed"
+              className="project__images-item"
+            />
+            <figcaption>Fig.9 - Feed.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePathRev("./request.jpg")}
+              alt="request"
+              className="project__images-item"
+            />
+            <figcaption>Fig.10 - Request.</figcaption>
           </figure>
         </div>
 

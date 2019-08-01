@@ -24,6 +24,7 @@ class Projects extends Component {
 
   componentDidMount() {
     this.props.setPage("yanghakim/projects");
+    this.handleHeaderChange("PROJECTS:");
   }
 
   grow = num => {
@@ -42,7 +43,8 @@ class Projects extends Component {
     this.setState({
       growFontAnimationClass: "projects__items shrink",
       growContainerAnimationClass: "projects shrink",
-      num: num
+      num: num,
+      header: "PROJECTS:"
     });
 
     this.props.shrink();
@@ -50,19 +52,49 @@ class Projects extends Component {
     this.props.setPage("yanghakim/projects");
   };
 
+  handleHeaderChange = page => {
+    this.setState({
+      header: page
+    });
+  };
+
   projectChoice = num => {
     switch (num) {
       case 1:
-        return <IntWeb shrink={this.shrink} setPage={this.props.setPage} />;
+        return (
+          <IntWeb
+            shrink={this.shrink}
+            setPage={this.props.setPage}
+            setHeader={this.handleHeaderChange}
+          />
+        );
         break;
       case 2:
-        return <IntApp shrink={this.shrink} setPage={this.props.setPage} />;
+        return (
+          <IntApp
+            shrink={this.shrink}
+            setPage={this.props.setPage}
+            setHeader={this.handleHeaderChange}
+          />
+        );
         break;
       case 3:
-        return <IntLand shrink={this.shrink} setPage={this.props.setPage} />;
+        return (
+          <IntLand
+            shrink={this.shrink}
+            setPage={this.props.setPage}
+            setHeader={this.handleHeaderChange}
+          />
+        );
         break;
       case 4:
-        return <FourSL shrink={this.shrink} setPage={this.props.setPage} />;
+        return (
+          <FourSL
+            shrink={this.shrink}
+            setPage={this.props.setPage}
+            setHeader={this.handleHeaderChange}
+          />
+        );
         break;
       case 0:
         return <About />;
@@ -74,7 +106,7 @@ class Projects extends Component {
     return (
       <div className={this.state.growContainerAnimationClass}>
         <div className={this.state.growFontAnimationClass}>
-          <p className="projects__items-header">yangha's projects:</p>
+          <p className="projects__items-header">{this.state.header}</p>
           <div
             className="projects__items__item one"
             onClick={() => this.grow(1)}

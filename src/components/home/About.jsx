@@ -9,7 +9,7 @@ const About = () => {
     <div className="about">
       <p className="about-title">Current Status:</p>
 
-      <p className="about-title">Current Goals:</p>
+      <p className="about-subtitle">Current Goals:</p>
       <p className="about-body">
         I'm active applying to developer positions in Philadelphia. I practice
         code and design for 5 hours on average everyday outside of work. I'm
@@ -18,7 +18,7 @@ const About = () => {
         employment.
       </p>
 
-      <p className="about-title">Current Employment:</p>
+      <p className="about-subtitle">Current Employment:</p>
       <p className="about-body">
         I'm currently employed at the <b>Institute of Behavior Change</b> as a{" "}
         <i>Therapeutic Staff Support</i>. I work with children on the autism
