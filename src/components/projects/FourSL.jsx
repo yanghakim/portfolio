@@ -8,6 +8,9 @@ class FourSL extends Component {
   }
 
   render() {
+    const images = require.context("../../images/fsl", true);
+    const imagePath = name => images(name, true);
+
     return (
       <div className="project">
         <div className="project__nav">
@@ -35,17 +38,61 @@ class FourSL extends Component {
           </div>
         </div>
         <div className="project__top">
-          <p className="project__header">FOUR SPIRITUAL LAWS:</p>
-          <div className="project__to">
-            <button className="project__to-learned">learned</button>
-            <button className="project__to-why">why</button>
-            <button className="project__to-guide">guide</button>
-            <button className="project__to-software">tech</button>
+          <p className="project__top__header">FOUR SPIRITUAL LAWS:</p>
+          <div className="project__top__to">
+            <button className="project__top__to-learned">learned</button>
+            <button className="project__top__to-why">why</button>
+            <button className="project__top__to-guide">guide</button>
+            <button className="project__top__to-software">tech</button>
           </div>
-          <p className="project__subheader">
+          <p className="project__top__subheader">
             a quick walkthrough of the four spiritual laws.
           </p>
         </div>
+
+        <div className="project__images">
+          <figure>
+            <img
+              src={imagePath("./home.jpg")}
+              alt="home"
+              className="project__images-item"
+            />
+            <figcaption>Fig.1 - Home Screen - Click to Proceed.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./green.jpg")}
+              alt="love"
+              className="project__images-item"
+            />
+            <figcaption>Fig.2 - 1st Law.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./grey.jpg")}
+              alt="sin"
+              className="project__images-item"
+            />
+            <figcaption>Fig.3 - 2nd Law.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./red.jpg")}
+              alt="Christ"
+              className="project__images-item"
+            />
+            <figcaption>Fig.4 - 3rd Law.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./yellow.jpg")}
+              alt="faith"
+              className="project__images-item"
+            />
+            <figcaption>Fig.5 - 4th Law.</figcaption>
+          </figure>
+        </div>
+
         <div className="project__learned">
           <p className="project__learned-header">WHAT I LEARNED:</p>
           <div className="project__learned-body">
