@@ -283,7 +283,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_typing_animation__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_typing_animation__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _home_About__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home/About */ "./src/components/home/About.jsx");
 /* harmony import */ var _projects_IntWeb__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./projects/IntWeb */ "./src/components/projects/IntWeb.jsx");
-/* harmony import */ var _projects_IntApp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./projects/IntApp */ "./src/components/projects/IntApp.jsx");
+/* harmony import */ var _projects_Elysian__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./projects/Elysian */ "./src/components/projects/Elysian.jsx");
 /* harmony import */ var _projects_IntLand__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./projects/IntLand */ "./src/components/projects/IntLand.jsx");
 /* harmony import */ var _projects_FourSL__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./projects/FourSL */ "./src/components/projects/FourSL.jsx");
 /* harmony import */ var _images_favicon_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../images/favicon.png */ "./src/images/favicon.png");
@@ -340,7 +340,7 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
           break;
 
         case 2:
-          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_projects_IntApp__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_projects_Elysian__WEBPACK_IMPORTED_MODULE_4__["default"], {
             shrink: this.shrink,
             setPage: this.props.setPage,
             __source: {
@@ -1183,9 +1183,9 @@ class FourSL extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
 /***/ }),
 
-/***/ "./src/components/projects/IntApp.jsx":
+/***/ "./src/components/projects/Elysian.jsx":
 /*!********************************************!*\
-  !*** ./src/components/projects/IntApp.jsx ***!
+  !*** ./src/components/projects/Elysian.jsx ***!
   \********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1196,11 +1196,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _sass_Project_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../sass/Project.sass */ "./src/sass/Project.sass");
 /* harmony import */ var _sass_Project_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sass_Project_sass__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/Admin/Desktop/git/portfolio/src/components/projects/IntApp.jsx";
+var _jsxFileName = "/Users/Admin/Desktop/git/portfolio/src/components/projects/Elysian.jsx";
 
 
 
-class IntApp extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+class Elysian extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   componentDidMount() {
     this.props.setPage("yanghakim/projects/Intercessor (mobile)");
   }
@@ -1427,7 +1427,7 @@ class IntApp extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (IntApp);
+/* harmony default export */ __webpack_exports__["default"] = (Elysian);
 
 /***/ }),
 

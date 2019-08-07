@@ -5,7 +5,6 @@ import "../../sass/Project.sass";
 class IntLand extends Component {
   componentDidMount() {
     this.props.setPage("yanghakim/projects/Intercessor (landing page)");
-    this.props.setHeader("LANDING PAGE:");
   }
   render() {
     const images = require.context("../../images/intland", true);

@@ -5,7 +5,6 @@ import "../../sass/Project.sass";
 class FourSL extends Component {
   componentDidMount() {
     this.props.setPage("yanghakim/projects/Four Spiritual Laws");
-    this.props.setHeader("FOUR SPIRITUAL LAWS:");
   }
 
   render() {

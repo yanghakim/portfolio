@@ -4,8 +4,7 @@ import "../../sass/Project.sass";
 
 class IntWeb extends Component {
   componentDidMount() {
-    this.props.setPage("yanghakim/projects/Intercessor (web)");
-    this.props.setHeader("INTERCESSOR:");
+    this.props.setPage("yanghakim/projects/Intercessor");
   }
 
   render() {

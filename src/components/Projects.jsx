@@ -3,7 +3,7 @@ import Typing from "react-typing-animation";
 
 import About from "./home/About";
 import IntWeb from "./projects/IntWeb";
-import IntApp from "./projects/IntApp";
+import Elysian from "./projects/Elysian";
 import IntLand from "./projects/IntLand";
 import FourSL from "./projects/FourSL";
 
@@ -71,7 +71,7 @@ class Projects extends Component {
         break;
       case 2:
         return (
-          <IntApp
+          <Elysian
             shrink={this.shrink}
             setPage={this.props.setPage}
             setHeader={this.handleHeaderChange}
@@ -108,33 +108,36 @@ class Projects extends Component {
         <div className={this.state.growFontAnimationClass}>
           <p className="projects__items-header">{this.state.header}</p>
           <div
+            className="projects__items__item two"
+            onClick={() => this.grow(2)}
+          >
+            <p className="projects__items__item-header">
+              business idea | CURRENT project
+            </p>
+            <p className="projects__items__item-title">elysian</p>
+            <p className="projects__items__item-desc">
+              a WEB app for JOURNALING MOMENTS WITH GOD
+            </p>
+          </div>
+          <div
             className="projects__items__item one"
             onClick={() => this.grow(1)}
           >
             <p className="projects__items__item-header">
-              july 2019 | featured project
+              july 2019 | FEATURED project
             </p>
             <p className="projects__items__item-title">intercessor.web</p>
             <p className="projects__items__item-desc">
               a WEB app for SHARING PRAYER REQUESTS
             </p>
           </div>
-          <div
-            className="projects__items__item two"
-            onClick={() => this.grow(2)}
-          >
-            <p className="projects__items__item-header">current</p>
-            <p className="projects__items__item-title">intercessor.mobile</p>
-            <p className="projects__items__item-desc">
-              a MOBILE app for SHARING PRAYER REQUESTS
-            </p>
-          </div>
+
           <div
             className="projects__items__item three"
             onClick={() => this.grow(3)}
           >
             <p className="projects__items__item-header">
-              july 2019 | landing page
+              july 2019 | LANDING page
             </p>
             <p className="projects__items__item-title">intercessor.landing</p>
             <p className="projects__items__item-desc">
@@ -146,7 +149,7 @@ class Projects extends Component {
             onClick={() => this.grow(4)}
           >
             <p className="projects__items__item-header">
-              april 2019 | reference point
+              april 2019 | REFERENCE point
             </p>
             <p className="projects__items__item-title">4 spiritual laws</p>
             <p className="projects__items__item-desc">
