@@ -18,7 +18,22 @@ class Elysian extends Component {
           </p>
 
           <div className="project__nav-links">
-            <a>in progress</a>
+            <a
+              href="https://elysian-dev.netlify.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              site{" "}
+            </a>
+            <a>|</a>
+            <a
+              href="https://github.com/yanghakim/Elysian"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              code
+            </a>
           </div>
         </div>
         <div className="project__top">
@@ -31,7 +46,7 @@ class Elysian extends Component {
         </div>
 
         <div className="project__images">
-          <p className="project__images-header">PREVIEWS:</p>{" "}
+          <p className="project__images-header">MOCKUPS:</p>{" "}
           <figure>
             <img
               src={imagePath("./sermons.jpg")}

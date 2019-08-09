@@ -23,7 +23,7 @@ const About = () => {
 
         <p className="about__body-subtitle">Current Goals (updated on 8/7):</p>
         <p className="about__body-body">
-          I'm active applying to developer positions in Philadelphia. I am
+          I'm actively applying to developer positions in Philadelphia. I am
           writing code, designing, and/or brainstorming for 8 hours on average
           everyday outside of work. For the past two weeks, after I completed my
           "Intercessor" website, I've been brainstorming projects to do next. A
@@ -38,7 +38,7 @@ const About = () => {
         <p className="about__body-body">
           I'm currently employed at the <b>Institute of Behavior Change</b> as a{" "}
           <i>Therapeutic Staff Support</i>. I work with children on the autism
-          spectrum and those who have ADHD. I spent the past 15 months serving
+          spectrum and those who have ADHD. I spent the past 16 months serving
           the community and working with children. My intentions are best
           articulated by this quote from Mahatma Gandhi:
           <i>
