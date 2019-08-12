@@ -61,7 +61,7 @@ class IntLand extends Component {
           <p className="project__images-header">PREVIEWS:</p>
           <figure>
             <img
-              src={imagePath("./one.jpg")}
+              src={imagePath("./one.png")}
               alt="header"
               className="project__images-item"
             />
@@ -70,7 +70,7 @@ class IntLand extends Component {
 
           <figure>
             <img
-              src={imagePath("./two.jpg")}
+              src={imagePath("./two.png")}
               alt="how it works"
               className="project__images-item"
             />
@@ -79,7 +79,7 @@ class IntLand extends Component {
 
           <figure>
             <img
-              src={imagePath("./three.jpg")}
+              src={imagePath("./three.png")}
               alt="how it works pt 2"
               className="project__images-item"
             />
@@ -88,7 +88,7 @@ class IntLand extends Component {
 
           <figure>
             <img
-              src={imagePath("./four.jpg")}
+              src={imagePath("./four.png")}
               alt="Design"
               className="project__images-item"
             />
@@ -97,7 +97,7 @@ class IntLand extends Component {
 
           <figure>
             <img
-              src={imagePath("./five.jpg")}
+              src={imagePath("./five.png")}
               alt="Footer"
               className="project__images-item"
             />

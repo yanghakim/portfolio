@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Greeting from "./home/Greeting";
 import Projects from "./Projects";
 
-import icon from "../images/birdpurp.png";
+import icon from "../images/favicon.png";
 
 import "../sass/Home.sass";
 
