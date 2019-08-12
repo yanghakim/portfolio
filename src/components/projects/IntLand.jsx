@@ -19,7 +19,7 @@ class IntLand extends Component {
 
           <div className="project__nav-links">
             <a
-              href="http://intercessor-landing.herokuapp.com/"
+              href="http://intercessor.page/"
               target="_blank"
               rel="noopener noreferrer"
             >
