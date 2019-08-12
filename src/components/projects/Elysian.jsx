@@ -46,30 +46,38 @@ class Elysian extends Component {
         </div>
 
         <div className="project__images">
-          <p className="project__images-header">MOCKUPS:</p>{" "}
+          <p className="project__images-header">PREVIEWS:</p>
           <figure>
             <img
-              src={imagePath("./sermons.jpg")}
-              alt="sermons"
+              src={imagePath("./login.jpg")}
+              alt="login"
               className="project__images-item"
             />
-            <figcaption>Fig.1 - Sermon Reflections/Notes.</figcaption>
+            <figcaption>Fig.1 - Login Screen.</figcaption>
           </figure>
           <figure>
             <img
-              src={imagePath("./photos.jpg")}
-              alt="photos"
+              src={imagePath("./menu.jpg")}
+              alt="menu"
               className="project__images-item"
             />
-            <figcaption>Fig.2 - Photo Reflections/Notes.</figcaption>
+            <figcaption>Fig.2 - Menu Screen.</figcaption>
           </figure>
           <figure>
             <img
-              src={imagePath("./songs.jpg")}
-              alt="songs"
+              src={imagePath("./home.jpg")}
+              alt="notes"
               className="project__images-item"
             />
-            <figcaption>Fig.3 - Song Reflections/Notes.</figcaption>
+            <figcaption>Fig.3 - Note Taking Screen.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./settings.jpg")}
+              alt="settings"
+              className="project__images-item"
+            />
+            <figcaption>Fig.4 - Settings Screen.</figcaption>
           </figure>
           <figure>
             <img
@@ -77,7 +85,7 @@ class Elysian extends Component {
               alt="purchase"
               className="project__images-item"
             />
-            <figcaption>Fig.4 - Purchase Journal.</figcaption>
+            <figcaption>Fig.5 - Purchase Screen.</figcaption>
           </figure>
         </div>
 
