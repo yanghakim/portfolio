@@ -18,7 +18,10 @@ const About = () => {
           intent from the user. I want to stray users as far away from
           mindlessness and invite them into mindfulness. With every product I
           make, I want to offer something practical but also adventurous and
-          engaging.
+          engaging. Although my projects may not be perfect, I have accepted
+          that the best way to improve is by constantly practicing and being
+          unafraid experimenting. I'm always trying to be a mindset of learning
+          and accepting imperfections in my code and design choices.
         </p>
 
         <p className="about__body-subtitle">Current Goals (updated on 8/7):</p>
@@ -29,7 +32,7 @@ const About = () => {
           "Intercessor" website, I've been brainstorming projects to do next. A
           vision of a CHRISTIAN PERSONAL JOUNRALING service captivated my mind.
           I've reached out to a friend with back-end experience and another with
-          design experience to help me flesh out this vision. Already, I am
+          design experience to help me flesh out this vision. Already, I'm
           learning the importance of communication, patience, and teamwork. I'm
           expectant to learn a lot of hard and soft skills from this project.
         </p>

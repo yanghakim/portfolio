@@ -56,13 +56,12 @@ class Home extends Component {
       <div className="container">
         {this.state.projects && (
           <div className="container__greeting">
-            <img src={icon} alt="yangha kim" width="50" height="50" />
-
             <p className="container__greeting-text">
               Yangha Kim
               <br />
               Based in Philly
             </p>
+            <img src={icon} alt="yangha kim" width="50" height="50" />
           </div>
         )}
 

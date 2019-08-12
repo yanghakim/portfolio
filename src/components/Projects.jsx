@@ -108,7 +108,7 @@ class Projects extends Component {
         <div className={this.state.growFontAnimationClass}>
           <p className="projects__items-header">{this.state.header}</p>
           <div
-            className="projects__items__item two"
+            className="projects__items__item one"
             onClick={() => this.grow(2)}
           >
             <p className="projects__items__item-header">
@@ -120,7 +120,7 @@ class Projects extends Component {
             </p>
           </div>
           <div
-            className="projects__items__item one"
+            className="projects__items__item two"
             onClick={() => this.grow(1)}
           >
             <p className="projects__items__item-header">
