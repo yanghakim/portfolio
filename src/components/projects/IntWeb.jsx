@@ -164,8 +164,8 @@ class IntWeb extends Component {
           </figure>
           <figure>
             <img
-              src={imagePath("./intweb-csanct.jpg")}
-              alt="intweb-csanct"
+              src={imagePath("./intweb-sanct.jpg")}
+              alt="intweb-sanct"
               className="project__images-item"
             />
             <figcaption>Fig.13 - Sanctuary.</figcaption>
