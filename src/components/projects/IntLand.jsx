@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import icon from "../../images/intland/favicon.png";
+
 import "../../sass/Project.sass";
 
 class IntLand extends Component {
@@ -37,7 +39,10 @@ class IntLand extends Component {
           </div>
         </div>
         <div className="project__top">
-          <p className="project__top__header">INTERCESSOR (landing page):</p>
+          <div className="project__top__header">
+            <img src={icon} width="30" height="30" />
+            <p>INTERCESSOR (landing page):</p>
+          </div>
           <div className="project__top__to">
             <a className="project__top__to-learned" href="#learned">
               todo

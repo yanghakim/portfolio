@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import icon from "../../images/fsl/4.png";
+
 import "../../sass/Project.sass";
 
 class FourSL extends Component {
@@ -38,7 +40,10 @@ class FourSL extends Component {
           </div>
         </div>
         <div className="project__top">
-          <p className="project__top__header">FOUR SPIRITUAL LAWS:</p>
+          <div className="project__top__header">
+            <img src={icon} width="30" height="30" />
+            <p>FOUR SPIRITUAL LAWS:</p>
+          </div>
           <div className="project__top__to">
             <button className="project__top__to-learned">learned</button>
             <button className="project__top__to-why">why</button>

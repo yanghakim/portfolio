@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import icon from "../../images/ataraxia/favicon.png";
+
 import "../../sass/Project.sass";
 
 class Ataraxia extends Component {
@@ -37,7 +39,10 @@ class Ataraxia extends Component {
           </div>
         </div>
         <div className="project__top">
-          <p className="project__top__header">ATARAXIA:</p>
+          <div className="project__top__header">
+            <img src={icon} width="30" height="30" />
+            <p>ATARAXIA:</p>
+          </div>
           <p className="project__top__subheader">
             a journey through human personality that might better equip
             Christians

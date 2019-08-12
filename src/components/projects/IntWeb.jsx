@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import icon from "../../images/intweb/favicon.png";
+
 import "../../sass/Project.sass";
 
 class IntWeb extends Component {
@@ -41,7 +43,11 @@ class IntWeb extends Component {
           </div>
         </div>
         <div className="project__top">
-          <p className="project__top__header">INTERCESSOR:</p>
+          <div className="project__top__header">
+            <img src={icon} width="30" height="30" />
+            <p>INTERCESSOR:</p>
+          </div>
+
           <div className="project__top__to">
             <a className="project__top__to-learned" href="#learned">
               learned

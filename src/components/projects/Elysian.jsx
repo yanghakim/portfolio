@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import icon from "../../images/elysian/favicon.png";
+
 import "../../sass/Project.sass";
 
 class Elysian extends Component {
@@ -37,7 +39,10 @@ class Elysian extends Component {
           </div>
         </div>
         <div className="project__top">
-          <p className="project__top__header">ELYSIAN:</p>
+          <div className="project__top__header">
+            <img src={icon} width="30" height="30" />
+            <p>ELYSIAN:</p>
+          </div>
           <p className="project__top__subheader">
             an environment to journal your walk with the Lord
             <br />a subscription service that compiles, packages, and delivers
