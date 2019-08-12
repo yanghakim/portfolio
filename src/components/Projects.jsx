@@ -4,6 +4,7 @@ import Typing from "react-typing-animation";
 import About from "./home/About";
 import IntWeb from "./projects/IntWeb";
 import Elysian from "./projects/Elysian";
+import Ataraxia from "./projects/Ataraxia";
 import IntLand from "./projects/IntLand";
 import FourSL from "./projects/FourSL";
 
@@ -62,7 +63,7 @@ class Projects extends Component {
     switch (num) {
       case 1:
         return (
-          <IntWeb
+          <Elysian
             shrink={this.shrink}
             setPage={this.props.setPage}
             setHeader={this.handleHeaderChange}
@@ -71,7 +72,7 @@ class Projects extends Component {
         break;
       case 2:
         return (
-          <Elysian
+          <IntWeb
             shrink={this.shrink}
             setPage={this.props.setPage}
             setHeader={this.handleHeaderChange}
@@ -80,7 +81,7 @@ class Projects extends Component {
         break;
       case 3:
         return (
-          <IntLand
+          <Ataraxia
             shrink={this.shrink}
             setPage={this.props.setPage}
             setHeader={this.handleHeaderChange}
@@ -88,6 +89,15 @@ class Projects extends Component {
         );
         break;
       case 4:
+        return (
+          <IntLand
+            shrink={this.shrink}
+            setPage={this.props.setPage}
+            setHeader={this.handleHeaderChange}
+          />
+        );
+        break;
+      case 5:
         return (
           <FourSL
             shrink={this.shrink}
@@ -109,44 +119,56 @@ class Projects extends Component {
           <p className="projects__items-header">{this.state.header}</p>
           <div
             className="projects__items__item one"
-            onClick={() => this.grow(2)}
+            onClick={() => this.grow(1)}
           >
             <p className="projects__items__item-header">
               business idea | CURRENT project
             </p>
             <p className="projects__items__item-title">elysian</p>
             <p className="projects__items__item-desc">
-              a WEB app for JOURNALING MOMENTS WITH GOD
+              a WEB site for JOURNALING MOMENTS WITH GOD
             </p>
           </div>
           <div
             className="projects__items__item two"
-            onClick={() => this.grow(1)}
+            onClick={() => this.grow(2)}
           >
             <p className="projects__items__item-header">
               july 2019 | FEATURED project
             </p>
             <p className="projects__items__item-title">intercessor.web</p>
             <p className="projects__items__item-desc">
-              a WEB app for SHARING PRAYER REQUESTS
+              a WEB site for SHARING PRAYER REQUESTS
+            </p>
+          </div>
+          <div
+            className="projects__items__item three"
+            onClick={() => this.grow(3)}
+          >
+            <p className="projects__items__item-header">
+              present | HOBBY project
+            </p>
+            <p className="projects__items__item-title">ataraxia</p>
+            <p className="projects__items__item-desc">
+              a WEB site for CHRISTIAN PERSONALITY EXPLORATION
             </p>
           </div>
 
           <div
-            className="projects__items__item three"
-            onClick={() => this.grow(3)}
+            className="projects__items__item four"
+            onClick={() => this.grow(4)}
           >
             <p className="projects__items__item-header">
               july 2019 | LANDING page
             </p>
             <p className="projects__items__item-title">intercessor.landing</p>
             <p className="projects__items__item-desc">
-              a WEB app serving as a LANDING PAGE for Intercessor (app).
+              a WEB site serving as a LANDING PAGE for Intercessor.
             </p>
           </div>
           <div
-            className="projects__items__item four"
-            onClick={() => this.grow(4)}
+            className="projects__items__item five"
+            onClick={() => this.grow(5)}
           >
             <p className="projects__items__item-header">
               april 2019 | REFERENCE point
