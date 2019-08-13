@@ -20,8 +20,9 @@ const About = () => {
           make, I want to offer something practical but also adventurous and
           engaging. Although my projects may not be perfect, I have accepted
           that the best way to improve is by constantly practicing and being
-          unafraid experimenting. I'm always trying to be a mindset of learning
-          and accepting imperfections in my code and design choices.
+          unafraid to experiment. I'm always trying to be a mindset of learning
+          and accepting that my code and design choices always have room for
+          improvement.
         </p>
 
         <p className="about__body-subtitle">Current Goals (updated on 8/7):</p>

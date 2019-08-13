@@ -44,7 +44,13 @@ class IntWeb extends Component {
         </div>
         <div className="project__top">
           <div className="project__top__header">
-            <img src={icon} width="30" height="30" />
+            <a
+              href="https://intercessor-web.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={icon} width="30" height="30" />
+            </a>
             <p>INTERCESSOR:</p>
           </div>
 
@@ -52,8 +58,8 @@ class IntWeb extends Component {
             <a className="project__top__to-learned" href="#learned">
               learned
             </a>
-            <a className="project__top__to-colors" href="#colors">
-              colors
+            <a className="project__top__to-design" href="#design">
+              design
             </a>
             <a className="project__top__to-guide" href="#guide">
               guide
@@ -64,210 +70,13 @@ class IntWeb extends Component {
             <a className="project__top__to-why" href="#why">
               why
             </a>
+            <a className="project__top__to-previews" href="#previews">
+              previews
+            </a>
           </div>
           <p className="project__top__subheader">
             an environment to send and view prayer requests.
           </p>
-        </div>
-
-        <div className="project__images">
-          <p className="project__images-header">PREVIEWS:</p>
-          <figure>
-            <img
-              src={imagePath("./intweb-white.jpg")}
-              alt="intweb-white"
-              className="project__images-item"
-            />
-            <figcaption>Fig.1 - Light Theme - Login Screen.</figcaption>
-          </figure>
-          <figure>
-            <img
-              src={imagePath("./intweb-login.jpg")}
-              alt="intweb-login"
-              className="project__images-item"
-            />
-            <figcaption>Fig.2 - Dark Theme - Login Screen.</figcaption>
-          </figure>
-          <figure>
-            <img
-              src={imagePath("./intweb-login2.jpg")}
-              alt="intweb-login2"
-              className="project__images-item"
-            />
-            <figcaption>Fig.3 - Login Form.</figcaption>
-          </figure>
-          <figure>
-            <img
-              src={imagePath("./intweb-menu.jpg")}
-              alt="intweb-menu"
-              className="project__images-item"
-            />
-            <figcaption>Fig.4 - Menu.</figcaption>
-          </figure>
-          <figure>
-            <img
-              src={imagePath("./intweb-info.jpg")}
-              alt="intweb-info"
-              className="project__images-item"
-            />
-            <figcaption>Fig.5 - Settings - User Info.</figcaption>
-          </figure>
-          <figure>
-            <img
-              src={imagePath("./intweb-groups.jpg")}
-              alt="intweb-groups"
-              className="project__images-item"
-            />
-            <figcaption>Fig.6 - Settings - Groups.</figcaption>
-          </figure>
-          <figure>
-            <img
-              src={imagePath("./intweb-creategrp.jpg")}
-              alt="intweb-creategrp"
-              className="project__images-item"
-            />
-            <figcaption>Fig.7 - Settings - Groups - Create Group.</figcaption>
-          </figure>
-          <figure>
-            <img
-              src={imagePath("./intweb-detail.jpg")}
-              alt="intweb-detail"
-              className="project__images-item"
-            />
-            <figcaption>Fig.8 - Settings - Groups - Group Detail.</figcaption>
-          </figure>
-          <figure>
-            <img
-              src={imagePath("./intweb-selah.jpg")}
-              alt="intweb-selah"
-              className="project__images-item"
-            />
-            <figcaption>Fig.9 - Selah.</figcaption>
-          </figure>
-          <figure>
-            <img
-              src={imagePath("./intweb-feed.jpg")}
-              alt="intweb-feed"
-              className="project__images-item"
-            />
-            <figcaption>Fig.10 - Prayer Feed.</figcaption>
-          </figure>
-          <figure>
-            <img
-              src={imagePath("./intweb-prayer.jpg")}
-              alt="intweb-prayer"
-              className="project__images-item"
-            />
-            <figcaption>Fig.11 - Prayer Feed - Prayer Detail.</figcaption>
-          </figure>
-          <figure>
-            <img
-              src={imagePath("./intweb-req.jpg")}
-              alt="intweb-req"
-              className="project__images-item"
-            />
-            <figcaption>Fig.12 - Prayer Request Form.</figcaption>
-          </figure>
-          <figure>
-            <img
-              src={imagePath("./intweb-sanct.jpg")}
-              alt="intweb-sanct"
-              className="project__images-item"
-            />
-            <figcaption>Fig.13 - Sanctuary.</figcaption>
-          </figure>
-        </div>
-
-        <div className="project__images">
-          <p className="project__images-header">POTENTIAL REDESIGN:</p>
-          <figure>
-            <img
-              src={imagePathRev("./greeting.gif")}
-              alt="greetings"
-              className="project__images-item"
-            />
-            <figcaption>Fig.1 - Greetings Screen.</figcaption>
-          </figure>
-          <figure>
-            <img
-              src={imagePathRev("./login.jpg")}
-              alt="login"
-              className="project__images-item"
-            />
-            <figcaption>Fig.2 - Login Screen.</figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src={imagePathRev("./menu.jpg")}
-              alt="menu"
-              className="project__images-item"
-            />
-            <figcaption>Fig.3 - Menu Screen.</figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src={imagePathRev("./settings.jpg")}
-              alt="settings"
-              className="project__images-item"
-            />
-            <figcaption>Fig.4 - Settings Screen.</figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src={imagePathRev("./info.jpg")}
-              alt="info"
-              className="project__images-item"
-            />
-            <figcaption>Fig.5 - Settings - User Info.</figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src={imagePathRev("./groups.jpg")}
-              alt="groups"
-              className="project__images-item"
-            />
-            <figcaption>Fig.6 - Settings - Groups.</figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src={imagePathRev("./timer.jpg")}
-              alt="timer"
-              className="project__images-item"
-            />
-            <figcaption>Fig.7 - Settings - Timers.</figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src={imagePathRev("./selah.jpg")}
-              alt="selah"
-              className="project__images-item"
-            />
-            <figcaption>Fig.8 - Selah.</figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src={imagePathRev("./feed.jpg")}
-              alt="feed"
-              className="project__images-item"
-            />
-            <figcaption>Fig.9 - Feed.</figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src={imagePathRev("./request.jpg")}
-              alt="request"
-              className="project__images-item"
-            />
-            <figcaption>Fig.10 - Request.</figcaption>
-          </figure>
         </div>
 
         <div className="project__learned" id="learned">
@@ -364,9 +173,16 @@ class IntWeb extends Component {
           </div>
         </div>
 
-        <div className="project__design" id="colors">
-          <p className="project__design-header">COLOR CHOICES:</p>
+        <div className="project__design" id="design">
+          <p className="project__design-header">DESIGN CHOICES:</p>
           <div className="project__design-body">
+            <a
+              href="https://fonts.google.com/specimen/Cutive+Mono"
+              target="__blank"
+              className="project__design-body-font cutive"
+            >
+              font: Cutive Mono
+            </a>
             <p className="project__design-body-colorshadow">
               dark theme: Creates a rather serious atmosphere to contrast with
               the fiery passion invoked by the landing page. This duality
@@ -590,6 +406,206 @@ class IntWeb extends Component {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="project__images" id="previews">
+          <p className="project__images-header">PREVIEWS:</p>
+          <figure>
+            <img
+              src={imagePath("./intweb-white.jpg")}
+              alt="intweb-white"
+              className="project__images-item"
+            />
+            <figcaption>Fig.1 - Light Theme - Login Screen.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-login.jpg")}
+              alt="intweb-login"
+              className="project__images-item"
+            />
+            <figcaption>Fig.2 - Dark Theme - Login Screen.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-login2.jpg")}
+              alt="intweb-login2"
+              className="project__images-item"
+            />
+            <figcaption>Fig.3 - Login Form.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-menu.jpg")}
+              alt="intweb-menu"
+              className="project__images-item"
+            />
+            <figcaption>Fig.4 - Menu.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-info.jpg")}
+              alt="intweb-info"
+              className="project__images-item"
+            />
+            <figcaption>Fig.5 - Settings - User Info.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-groups.jpg")}
+              alt="intweb-groups"
+              className="project__images-item"
+            />
+            <figcaption>Fig.6 - Settings - Groups.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-creategrp.jpg")}
+              alt="intweb-creategrp"
+              className="project__images-item"
+            />
+            <figcaption>Fig.7 - Settings - Groups - Create Group.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-detail.jpg")}
+              alt="intweb-detail"
+              className="project__images-item"
+            />
+            <figcaption>Fig.8 - Settings - Groups - Group Detail.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-selah.jpg")}
+              alt="intweb-selah"
+              className="project__images-item"
+            />
+            <figcaption>Fig.9 - Selah.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-feed.jpg")}
+              alt="intweb-feed"
+              className="project__images-item"
+            />
+            <figcaption>Fig.10 - Prayer Feed.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-prayer.jpg")}
+              alt="intweb-prayer"
+              className="project__images-item"
+            />
+            <figcaption>Fig.11 - Prayer Feed - Prayer Detail.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-req.jpg")}
+              alt="intweb-req"
+              className="project__images-item"
+            />
+            <figcaption>Fig.12 - Prayer Request Form.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./intweb-sanct.jpg")}
+              alt="intweb-sanct"
+              className="project__images-item"
+            />
+            <figcaption>Fig.13 - Sanctuary.</figcaption>
+          </figure>
+        </div>
+
+        <div className="project__images">
+          <p className="project__images-header">POTENTIAL REDESIGN:</p>
+          <figure>
+            <img
+              src={imagePathRev("./greeting.gif")}
+              alt="greetings"
+              className="project__images-item"
+            />
+            <figcaption>Fig.1 - Greetings Screen.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePathRev("./login.jpg")}
+              alt="login"
+              className="project__images-item"
+            />
+            <figcaption>Fig.2 - Login Screen.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePathRev("./menu.jpg")}
+              alt="menu"
+              className="project__images-item"
+            />
+            <figcaption>Fig.3 - Menu Screen.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePathRev("./settings.jpg")}
+              alt="settings"
+              className="project__images-item"
+            />
+            <figcaption>Fig.4 - Settings Screen.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePathRev("./info.jpg")}
+              alt="info"
+              className="project__images-item"
+            />
+            <figcaption>Fig.5 - Settings - User Info.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePathRev("./groups.jpg")}
+              alt="groups"
+              className="project__images-item"
+            />
+            <figcaption>Fig.6 - Settings - Groups.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePathRev("./timer.jpg")}
+              alt="timer"
+              className="project__images-item"
+            />
+            <figcaption>Fig.7 - Settings - Timers.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePathRev("./selah.jpg")}
+              alt="selah"
+              className="project__images-item"
+            />
+            <figcaption>Fig.8 - Selah.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePathRev("./feed.jpg")}
+              alt="feed"
+              className="project__images-item"
+            />
+            <figcaption>Fig.9 - Feed.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePathRev("./request.jpg")}
+              alt="request"
+              className="project__images-item"
+            />
+            <figcaption>Fig.10 - Request.</figcaption>
+          </figure>
         </div>
       </div>
     );

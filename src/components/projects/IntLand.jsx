@@ -40,14 +40,21 @@ class IntLand extends Component {
         </div>
         <div className="project__top">
           <div className="project__top__header">
-            <img src={icon} width="30" height="30" />
+            <a
+              href="http://intercessor.page/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={icon} width="30" height="30" />
+            </a>
+
             <p>INTERCESSOR (landing page):</p>
           </div>
           <div className="project__top__to">
             <a className="project__top__to-learned" href="#learned">
               todo
             </a>
-            <a className="project__top__to-colors" href="#design">
+            <a className="project__top__to-design" href="#design">
               design
             </a>
             <a className="project__top__to-guide" href="#guide">
@@ -62,56 +69,9 @@ class IntLand extends Component {
           </p>
         </div>
 
-        <div className="project__images">
-          <p className="project__images-header">PREVIEWS:</p>
-          <figure>
-            <img
-              src={imagePath("./one.png")}
-              alt="header"
-              className="project__images-item"
-            />
-            <figcaption>Fig.1 - Header.</figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src={imagePath("./two.png")}
-              alt="how it works"
-              className="project__images-item"
-            />
-            <figcaption>Fig.2 - How it works.</figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src={imagePath("./three.png")}
-              alt="how it works pt 2"
-              className="project__images-item"
-            />
-            <figcaption>Fig.3 - How it works (cont).</figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src={imagePath("./four.png")}
-              alt="Design"
-              className="project__images-item"
-            />
-            <figcaption>Fig.4 - Design.</figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src={imagePath("./five.png")}
-              alt="Footer"
-              className="project__images-item"
-            />
-            <figcaption>Fig.5 - Footer.</figcaption>
-          </figure>
-        </div>
         <div className="project__learned" id="learned">
           <p className="project__learned-header">WHAT I LEARNED:</p>
-          <div className="project__learned-body">
+          <div className="project__learned-body onecols">
             <div className="project__learned-1">
               <p className="project__learned-1-header">
                 [I]: Small Improvements
@@ -164,6 +124,54 @@ class IntLand extends Component {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="project__images">
+          <p className="project__images-header">PREVIEWS:</p>
+          <figure>
+            <img
+              src={imagePath("./one.png")}
+              alt="header"
+              className="project__images-item"
+            />
+            <figcaption>Fig.1 - Header.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePath("./two.png")}
+              alt="how it works"
+              className="project__images-item"
+            />
+            <figcaption>Fig.2 - How it works.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePath("./three.png")}
+              alt="how it works pt 2"
+              className="project__images-item"
+            />
+            <figcaption>Fig.3 - How it works (cont).</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePath("./four.png")}
+              alt="Design"
+              className="project__images-item"
+            />
+            <figcaption>Fig.4 - Design.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={imagePath("./five.png")}
+              alt="Footer"
+              className="project__images-item"
+            />
+            <figcaption>Fig.5 - Footer.</figcaption>
+          </figure>
         </div>
       </div>
     );

@@ -40,13 +40,96 @@ class Ataraxia extends Component {
         </div>
         <div className="project__top">
           <div className="project__top__header">
-            <img src={icon} width="30" height="30" />
+            <a
+              href="https://ataraxia.netlify.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={icon} width="30" height="30" />
+            </a>
+
             <p>ATARAXIA:</p>
           </div>
+          <div className="project__top__to">
+            <a className="project__top__to-learned" href="#learned">
+              learned
+            </a>
+            <a className="project__top__to-design" href="#design">
+              design
+            </a>
+            <a className="project__top__to-previews" href="#previews">
+              previews
+            </a>
+          </div>
+
           <p className="project__top__subheader">
             a journey through human personality that might better equip
             Christians
           </p>
+        </div>
+
+        <div className="project__learned" id="learned">
+          <p className="project__learned-header">WHAT I ANTICIPATE LEARNING:</p>
+          <div className="project__learned-body twocols">
+            <div className="project__learned-1">
+              <p className="project__learned-1-header">[I]: Angular</p>
+              <p className="project__learned-1-body">
+                - learning Angular architecture and best structuring practices
+                <br />
+                - Angular CLI commands
+                <br />- How Angular compares to React
+                <br />- TypeScript
+              </p>
+            </div>
+            <div className="project__learned-2">
+              <p className="project__learned-2-header">[II]: Enjoyment</p>
+              <p className="project__learned-2-body">
+                - personal enjoyment of exploring human personality
+                <br />- creating an interactive and flashy design
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="project__design" id="design">
+          <p className="project__design-header">DESIGN CHOICES:</p>
+          <div className="project__design-body">
+            <a
+              href="https://fonts.google.com/specimen/Source+Code+Pro"
+              target="__blank"
+              className="project__design-body-font source"
+            >
+              font: Source Code Pro
+            </a>
+            <a
+              href="https://unsplash.com/photos/7JX0-bfiuxQ"
+              target="__blank"
+              className="project__design-body-image"
+            >
+              Photo by JJ Ying on Unsplash
+            </a>
+            <a
+              href="https://unsplash.com/photos/rNQ-xlJj_EM"
+              target="__blank"
+              className="project__design-body-image"
+            >
+              Photo by Paweł Czerwiński on Unsplash
+            </a>
+            <a
+              href="https://unsplash.com/photos/PPo9tjzjcPg"
+              target="__blank"
+              className="project__design-body-image"
+            >
+              Photo by Paweł Czerwiński on Unsplash
+            </a>
+            <a
+              href="https://unsplash.com/photos/1t2ld1PxgAs"
+              target="__blank"
+              className="project__design-body-font source"
+            >
+              Photo by Samuel Zeller on Unsplash
+            </a>
+          </div>
         </div>
 
         <div className="project__images">
@@ -99,29 +182,6 @@ class Ataraxia extends Component {
             />
             <figcaption>Fig.6 - Enneagram TriType Screen.</figcaption>
           </figure>
-        </div>
-
-        <div className="project__learned" id="learned">
-          <p className="project__learned-header">WHAT I ANTICIPATE LEARNING:</p>
-          <div className="project__learned-body">
-            <div className="project__learned-1">
-              <p className="project__learned-1-header">[I]: Angular</p>
-              <p className="project__learned-1-body">
-                - learning Angular architecture and best structuring practices
-                <br />
-                - Angular CLI commands
-                <br />- How Angular compares to React
-                <br />- TypeScript
-              </p>
-            </div>
-            <div className="project__learned-2">
-              <p className="project__learned-2-header">[II]: Enjoyment</p>
-              <p className="project__learned-2-body">
-                - personal enjoyment of exploring human personality
-                <br />- creating an interactive and flashy design
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     );

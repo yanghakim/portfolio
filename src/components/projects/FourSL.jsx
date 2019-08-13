@@ -41,12 +41,19 @@ class FourSL extends Component {
         </div>
         <div className="project__top">
           <div className="project__top__header">
-            <img src={icon} width="30" height="30" />
+            <a
+              href="https://fslaws.netlify.com/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={icon} width="30" height="30" />
+            </a>
+
             <p>FOUR SPIRITUAL LAWS:</p>
           </div>
           <div className="project__top__to">
             <button className="project__top__to-learned">learned</button>
-            <button className="project__top__to-why">why</button>
+            <button className="project__top__to-design">design</button>
             <button className="project__top__to-guide">guide</button>
             <button className="project__top__to-software">tech</button>
           </div>
@@ -55,53 +62,9 @@ class FourSL extends Component {
           </p>
         </div>
 
-        <div className="project__images">
-          <p className="project__images-header">PREVIEWS:</p>{" "}
-          <figure>
-            <img
-              src={imagePath("./home.jpg")}
-              alt="home"
-              className="project__images-item"
-            />
-            <figcaption>Fig.1 - Home Screen - Click to Proceed.</figcaption>
-          </figure>
-          <figure>
-            <img
-              src={imagePath("./green.jpg")}
-              alt="love"
-              className="project__images-item"
-            />
-            <figcaption>Fig.2 - 1st Law.</figcaption>
-          </figure>
-          <figure>
-            <img
-              src={imagePath("./grey.jpg")}
-              alt="sin"
-              className="project__images-item"
-            />
-            <figcaption>Fig.3 - 2nd Law.</figcaption>
-          </figure>
-          <figure>
-            <img
-              src={imagePath("./red.jpg")}
-              alt="Christ"
-              className="project__images-item"
-            />
-            <figcaption>Fig.4 - 3rd Law.</figcaption>
-          </figure>
-          <figure>
-            <img
-              src={imagePath("./yellow.jpg")}
-              alt="faith"
-              className="project__images-item"
-            />
-            <figcaption>Fig.5 - 4th Law.</figcaption>
-          </figure>
-        </div>
-
         <div className="project__learned">
           <p className="project__learned-header">WHAT I LEARNED:</p>
-          <div className="project__learned-body">
+          <div className="project__learned-body twocols">
             <div className="project__learned-1">
               <p className="project__learned-1-header">
                 [I]: Returning to coding
@@ -136,6 +99,28 @@ class FourSL extends Component {
         <div className="project__design" id="design">
           <p className="project__design-header">COLOR CHOICES:</p>
           <div className="project__design-body">
+            <a
+              href="https://fonts.google.com/specimen/Limelight"
+              target="__blank"
+              className="project__design-body-font limelight"
+            >
+              h1 font: Limelight
+            </a>
+            <a
+              href="https://fonts.google.com/specimen/Josefin+Sans"
+              target="__blank"
+              className="project__design-body-font josefin"
+            >
+              h2 font: Josefin Sans
+            </a>
+            <a
+              href="https://fonts.google.com/specimen/Caveat"
+              target="__blank"
+              className="project__design-body-font caveat"
+            >
+              p font: Caveat
+            </a>
+
             <p className="project__design-body-colorgreen">
               green: Symbolizes life and flourishing, as the first spiritual law
               is that God loves you and offers a wonderful plan for your life.
@@ -211,6 +196,50 @@ class FourSL extends Component {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="project__images">
+          <p className="project__images-header">PREVIEWS:</p>{" "}
+          <figure>
+            <img
+              src={imagePath("./home.jpg")}
+              alt="home"
+              className="project__images-item"
+            />
+            <figcaption>Fig.1 - Home Screen - Click to Proceed.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./green.jpg")}
+              alt="love"
+              className="project__images-item"
+            />
+            <figcaption>Fig.2 - 1st Law.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./grey.jpg")}
+              alt="sin"
+              className="project__images-item"
+            />
+            <figcaption>Fig.3 - 2nd Law.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./red.jpg")}
+              alt="Christ"
+              className="project__images-item"
+            />
+            <figcaption>Fig.4 - 3rd Law.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={imagePath("./yellow.jpg")}
+              alt="faith"
+              className="project__images-item"
+            />
+            <figcaption>Fig.5 - 4th Law.</figcaption>
+          </figure>
         </div>
       </div>
     );

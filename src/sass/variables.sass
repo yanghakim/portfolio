@@ -107,12 +107,15 @@ $purple-1: darken($purple, 10%)
   text-align: center
   text-decoration: none
 
+  display: flex
+  justify-content: center
+  align-items: center
+
   transition: 0.5s ease-in-out
 
   &:hover
     color: white
     background-color: $purple
-
 
 @mixin sidebar($color)
   color: $color
@@ -120,6 +123,20 @@ $purple-1: darken($purple, 10%)
   padding-left: 7px
 
   box-shadow: -5px 0px rgba(0, 0, 0, 0), -7px 0px $color
+
+@mixin fonts
+  color: $shadow
+  font-family: "Space Mono", monospace
+  text-decoration: none
+
+  background-color: white
+  padding: 3px 30px 3px 7px
+  border-radius: 0 5px 5px 0
+  border: 1.3px solid $shadow
+
+  margin: 10px 0
+
+  box-shadow: -5px 0px rgba(0, 0, 0, 0), -7px 0px $shadow
 
 @mixin colors($color)
   color: $color
