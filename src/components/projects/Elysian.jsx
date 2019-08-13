@@ -145,6 +145,14 @@ class Elysian extends Component {
             />
             <figcaption>Fig.5 - Purchase Screen.</figcaption>
           </figure>
+          <figure>
+            <img
+              src={imagePath("./checkout2.jpg")}
+              alt="purchase"
+              className="project__images-item"
+            />
+            <figcaption>Fig.6 - Purchase (Bottom) Screen.</figcaption>
+          </figure>
         </div>
       </div>
     );

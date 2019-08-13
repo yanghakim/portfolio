@@ -128,6 +128,7 @@ class Projects extends Component {
             <p className="projects__items__item-desc">
               a WEB site for JOURNALING MOMENTS WITH GOD
             </p>
+            <p className="projects__items__item-tech">React | Python</p>
           </div>
           <div
             className="projects__items__item two"
@@ -140,6 +141,7 @@ class Projects extends Component {
             <p className="projects__items__item-desc">
               a WEB site for SHARING PRAYER REQUESTS
             </p>
+            <p className="projects__items__item-tech">MERN Stack</p>
           </div>
           <div
             className="projects__items__item three"
@@ -152,6 +154,7 @@ class Projects extends Component {
             <p className="projects__items__item-desc">
               a WEB site for CHRISTIAN PERSONALITY EXPLORATION
             </p>
+            <p className="projects__items__item-tech">MEAN Stack</p>
           </div>
 
           <div
@@ -165,6 +168,7 @@ class Projects extends Component {
             <p className="projects__items__item-desc">
               a WEB site serving as a LANDING PAGE for Intercessor.
             </p>
+            <p className="projects__items__item-tech">React</p>
           </div>
           <div
             className="projects__items__item five"
@@ -177,6 +181,7 @@ class Projects extends Component {
             <p className="projects__items__item-desc">
               a WEB site navigating through the 4 spiritual laws
             </p>
+            <p className="projects__items__item-tech">JavaScript</p>
           </div>
         </div>
         <div className="projects__desc">
