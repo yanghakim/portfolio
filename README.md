@@ -7,6 +7,12 @@
 </h1>
 
 <h4 align="center">A personal portfolio built upon <a href="https://reactjs.org/" target="_blank">React.JS</a>.</h4>
+<p align="center">
+  <a href="https://scrutinizer-ci.com/g/yanghakim/portfolio/?branch=master">
+    <img src="https://scrutinizer-ci.com/g/yanghakim/portfolio/badges/quality-score.png?b=master"
+         alt="scrutinizer">
+  </a>
+</p>
 
 <p align="center">
   <a href="#key-features">Key Features</a> •
