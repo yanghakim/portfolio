@@ -25,44 +25,43 @@
 
 ## Key Features
 
-* Seamless transitions
-* Responsive
-* Color-coded and themed
-* Structured project details with nav links
-* Hovering navigation tracker
+  * Seamless transitions
+  * Responsive
+  * Color-coded and themed
+  * Structured project details with nav links
+  * Hovering navigation tracker
 
 ## How To Use
 
-1. Refrain from using the back key. (Experimental one page website)
-- Testing out smoother animations between component resizing.
-2. Read the "about" section.
-3. Check out one of my projects.
-- Read about what I learned/plan to learn from each project.
-- Get some insight into my design choices.
-- Get a brief tutorial on how to use the app.
-- Get a rundown of the software architecture.
-- See some previews.
-- Checkout the app and the github page.
-- Repeat on another project.
+ 1. Refrain from using the back key. (Experimental one page website)
+  * Testing out smoother animations between component resizing.
+ 2. Read the "about" section.
+ 3. Check out one of my projects.
+  * Read about what I learned/plan to learn from each project.
+  * Get some insight into my design choices.
+  * Get a brief tutorial on how to use the app.
+  * Get a rundown of the software architecture.
+  * See some previews.
+  * Checkout the app and the github page.
+  * Repeat on another project.
 
 ## Credits
 
 This software uses the following open source packages:
 
-- [Node.js](https://nodejs.org/)
-- [React.js](https://reactjs.org/)
+  * [Node.js](https://nodejs.org/)
+  * [React.js](https://reactjs.org/)
 
 This software draws design inspiration from:
 
-- [Visions for the future internet](https://findingctrl.nesta.org.uk/)
+  * [Visions for the future internet](https://findingctrl.nesta.org.uk/)
 
-## You may also like...
+## You may also like
 
-- [Intercessor](https://github.com/yanghakim/intercessor) - A Prayer Sharing app
-- [Elysian](https://github.com/yanghakim/elysian) - A Christian Notetaking app
+  * [Intercessor](https://github.com/yanghakim/intercessor) - A Prayer Sharing app
+  * [Elysian](https://github.com/yanghakim/elysian) - A Christian Notetaking app
 
 ---
 
 > [yanghakim.com](https://www.yanghakim.com) &nbsp;&middot;&nbsp;
 > GitHub [@yanghakim](https://github.com/yanghakim) &nbsp;&middot;&nbsp;
-
