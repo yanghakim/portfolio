@@ -31,15 +31,15 @@
 
       padding: 5px
       margin: 0
-      border: 1px solid $shadow
-      background-color: rgba(244,244,244,0.8)
+      border: 2px solid $purple
+      background-color: lighten($purple, 45%)
 
-      color: $shadow
+      color: $purple
       cursor: pointer
       transition: 0.5s ease
 
       &:hover
-        color: $purple
+        color: $accent
 
       @media (max-width: 900px)
         width: 30px
@@ -49,24 +49,21 @@
       flex-direction: row
 
       padding: 5px 10px
-      border: 1px solid $shadow
-      background-color: rgba(244,244,244,0.8)
+      border: 2px solid $purple
+      background-color: lighten($purple, 45%)
 
-      border-left: 5px solid $shadow
+      border-left: 5px solid $purple
 
       transition: 0.3s ease
 
-      &:hover
-        background-color: $purple
-
       a
-        color: $shadow
+        color: $purple
         text-decoration: none
 
         transition: 0.3s ease
 
         &:hover
-          color: white
+          color: $accent
 
   &__top
     display: grid
